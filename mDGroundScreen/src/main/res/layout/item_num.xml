@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="255px"
+        android:layout_height="105px"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/view_seperator"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#ADADAD"
+            android:gravity="top" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="239px"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/view_seperator"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:textColor="#CC374043"
+            android:textSize="82px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_yizhida"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_alignRight="@+id/tv_num"
+            android:layout_marginRight="15px"
+            android:layout_marginTop="15px"
+            android:src="@drawable/icon_yizhida"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_emergency"
+            android:layout_width="30px"
+            android:layout_height="60px"
+            android:layout_alignRight="@+id/tv_num"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15px"
+            android:scaleType="fitXY"
+            android:src="@drawable/emergency"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,390 @@
+[
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/layout_dialog_loading.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/layout/dialog_loading.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_loading_bg.9.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/loading_bg.9.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_loading_6.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/loading_6.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/layout_item_num.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/layout/item_num.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_doctor_name_bg.9.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/doctor_name_bg.9.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_id_nor.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/id_nor.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_icon_yizhida.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/icon_yizhida.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable_login_button_selector.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable/login_button_selector.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_loading_10.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/loading_10.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_login_line.9.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/login_line.9.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xhdpi_loading_1.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xhdpi/loading_1.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_login_bg.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/login_bg.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_login_bg.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/login_bg.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_loading_7.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/loading_7.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xhdpi_loading_8.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xhdpi/loading_8.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable_selector_page_indicator.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable/selector_page_indicator.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_app_icon.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/app_icon.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_button2_nor.9.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/button2_nor.9.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/layout_item_single_big_docotor.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/layout/item_single_big_docotor.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_box_delete.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/box_delete.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_app_icon.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/app_icon.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_point_normal.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/point_normal.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable_shape_item_doctor.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable/shape_item_doctor.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_effect.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/effect.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xhdpi_loading_7.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xhdpi/loading_7.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-mdpi_emergency.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-mdpi/emergency.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_box8_nor.9.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/box8_nor.9.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xhdpi_loading_3.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xhdpi/loading_3.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xhdpi-v4_ic_launcher.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mdGroundLib/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_photo2.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/photo2.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_page.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/page.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/layout_indicator_view.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/layout/indicator_view.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_button2_nor.9.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/button2_nor.9.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_box2_2.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/box2_2.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_loading_4.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/loading_4.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/layout_activity_test.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/layout/activity_test.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_box1_2.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/box1_2.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_photo.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/photo.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xhdpi_loading_6.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xhdpi/loading_6.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/layout_progress_softupdate.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/layout/progress_softupdate.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-mdpi-v4_ic_launcher.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mdGroundLib/build/intermediates/packaged_res/debug/drawable-mdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_line.9.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/line.9.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_effect2.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/effect2.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/anim_left_push_out.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/anim/left_push_out.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_point_select.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/point_select.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_id_nor.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/id_nor.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_tab_1.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/tab_1.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_box1_2.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/box1_2.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable_shape_data_center_circle_highlight.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable/shape_data_center_circle_highlight.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_box1.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/box1.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_line.9.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/line.9.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/menu_main.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mdGroundLib/build/intermediates/packaged_res/debug/menu/main.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_box2_2.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/box2_2.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xhdpi_loading_9.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xhdpi/loading_9.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_box_delete.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/box_delete.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_loading_1.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/loading_1.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable_shape_data_center_circle_normal.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable/shape_data_center_circle_normal.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_login_line.9.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/login_line.9.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_box1_3.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/box1_3.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_lock_nor.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/lock_nor.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_box2_3.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/box2_3.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xhdpi_loading_5.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xhdpi/loading_5.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/layout_item_normal_docotor.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/layout/item_normal_docotor.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/anim_loading.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/anim/loading.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_lock_nor.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/lock_nor.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_photo.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/photo.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/anim_right_push_out.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/anim/right_push_out.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xhdpi_photo2.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xhdpi/photo2.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_effect.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/effect.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable_tab_selector.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable/tab_selector.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_loading_2.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/loading_2.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xhdpi_loading_4.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xhdpi/loading_4.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_loading_9.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/loading_9.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_button2_sel.9.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/button2_sel.9.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/anim_right_push_in.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/anim/right_push_in.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_box2_1.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/box2_1.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_icon_clip.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/icon_clip.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xhdpi_loading_10.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xhdpi/loading_10.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_loading_3.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/loading_3.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_box1_1.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/box1_1.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_tab_2.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/tab_2.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_loading_8.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/loading_8.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_button2_sel.9.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/button2_sel.9.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_box2_1.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/box2_1.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_box2.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/box2.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_box8_nor.9.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/box8_nor.9.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_box1_1.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/box1_1.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xhdpi_loading_bg.9.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xhdpi/loading_bg.9.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_loading_5.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/loading_5.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_box1_3.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/box1_3.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_box2_3.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/box2_3.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/anim_left_push_in.xml.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/anim/left_push_in.xml"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xhdpi_loading_2.png.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xhdpi/loading_2.png"
+    }
+]

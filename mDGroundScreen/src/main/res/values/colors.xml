@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_color">#EAEBED</color>
+    <color name="font_dark">#370403</color>
+    <color name="font">#8c8c8c</color>
+    <color name="font_blue">#14a9ff</color>
+    <color name="normal_black">#374043</color>
+    <color name="main_background">#2A464F</color>
+    <color name="normal_color">#CC374043</color>
+    
+</resources>

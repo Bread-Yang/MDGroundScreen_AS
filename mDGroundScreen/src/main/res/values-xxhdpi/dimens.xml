@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="size_12">12sp</dimen>
+    <dimen name="size_17">17sp</dimen>
+    <dimen name="size_20">20sp</dimen>
+    <dimen name="size_23">23sp</dimen>
+    <dimen name="size_24">24sp</dimen>
+    <dimen name="size_51">51sp</dimen>
+    <dimen name="size_93">93sp</dimen>
+    <dimen name="margin_18">18dip</dimen>
+    <dimen name="margin_3">3dip</dimen>
+    <dimen name="margin_7">7dip</dimen>
+    <dimen name="margin_10">10dip</dimen>
+    <dimen name="margin_14">14dip</dimen>
+    <dimen name="margin_26">26dip</dimen>
+    <dimen name="margin_8">8dip</dimen>
+    <dimen name="margin_20">20dip</dimen>
+    <dimen name="margin_80">80dip</dimen>
+    <dimen name="layout_30">30dip</dimen>
+    <dimen name="layout_40">40dip</dimen>
+    <dimen name="layout_90">90dip</dimen>
+    <dimen name="layout_60">60dip</dimen>
+    <dimen name="layout_160">160dip</dimen>
+    <dimen name="margin_33">33dip</dimen>
+    <dimen name="margin_36">36dip</dimen>
+    <dimen name="margin_38">38dip</dimen>
+    <dimen name="margin_44">44dip</dimen>
+    <dimen name="margin_53">53dip</dimen>
+    <dimen name="margin_15">15dip</dimen>
+    <dimen name="margin_60">60dip</dimen>
+    <dimen name="margin_240">240dip</dimen>
+    <dimen name="margin_120">120dip</dimen>
+
+</resources>

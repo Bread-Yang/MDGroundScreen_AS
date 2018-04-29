@@ -1,0 +1,98 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/robin/Github/MDGroundScreen_AS/mdGroundLib/build/intermediates/packaged_res/debug/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,113,169,271",
+                        "endColumns": "57,55,52,52",
+                        "endOffsets": "108,164,217,319"
+                    },
+                    "to": {
+                        "startLines": "80,81,83,87",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "4930,4988,5083,5274",
+                        "endColumns": "57,55,52,52",
+                        "endOffsets": "4983,5039,5131,5322"
+                    }
+                },
+                {
+                    "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "23,30,8,19,34,46,84,50,88,92,42,80,76,72,38,63,67,54,58,97",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "787,1211,252,596,1366,1810,3352,1957,3511,3674,1660,3187,3022,2862,1511,2479,2642,2106,2264,3894",
+                        "endLines": "28,32,16,21,36,48,86,52,90,95,44,82,78,74,40,65,70,56,61,107",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "1203,1358,555,753,1503,1949,3503,2098,3666,3886,1802,3344,3179,3014,1652,2634,2854,2256,2471,4343"
+                    },
+                    "to": {
+                        "startLines": "99,105,108,117,120,123,126,129,132,135,139,142,145,148,151,154,157,161,164,168",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "5849,6265,6415,6719,6879,7019,7161,7315,7459,7617,7831,7976,8136,8296,8451,8595,8753,8967,9120,9329",
+                        "endLines": "104,107,116,119,122,125,128,131,134,138,141,144,147,150,153,156,160,163,167,178",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "6260,6410,6714,6874,7014,7156,7310,7454,7612,7826,7971,8131,8291,8446,8590,8748,8962,9115,9324,9768"
+                    }
+                },
+                {
+                    "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "3,5,6,4,8,7,9",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "59,156,196,111,289,241,340",
+                        "endColumns": "50,38,43,43,49,46,48",
+                        "endOffsets": "105,190,235,150,334,283,384"
+                    },
+                    "to": {
+                        "startLines": "40,41,42,43,44,45,46",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "2399,2450,2489,2533,2577,2627,2674",
+                        "endColumns": "50,38,43,43,49,46,48",
+                        "endOffsets": "2445,2484,2528,2572,2622,2669,2718"
+                    }
+                },
+                {
+                    "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/values/attrs.xml",
+                    "from": {
+                        "startLines": "15,53",
+                        "startColumns": "4,4",
+                        "startOffsets": "601,2942",
+                        "endLines": "51,53",
+                        "endColumns": "11,52",
+                        "endOffsets": "2900,2990"
+                    },
+                    "to": {
+                        "startLines": "2,39",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,2347",
+                        "endLines": "38,39",
+                        "endColumns": "11,51",
+                        "endOffsets": "2342,2394"
+                    }
+                },
+                {
+                    "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "7,2,3,4,6,9,5,8,16,12,14,10,11,13,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "241,19,61,108,203,322,160,281,682,469,582,365,417,528,634",
+                        "endColumns": "38,40,45,50,36,41,41,39,49,57,50,50,50,52,46",
+                        "endOffsets": "275,55,102,154,235,359,197,316,727,522,628,411,463,576,676"
+                    },
+                    "to": {
+                        "startLines": "82,84,85,86,88,89,90,91,92,93,94,95,96,97,98",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "5044,5136,5177,5223,5327,5364,5406,5448,5488,5538,5596,5647,5698,5749,5802",
+                        "endColumns": "38,40,45,50,36,41,41,39,49,57,50,50,50,52,46",
+                        "endOffsets": "5078,5172,5218,5269,5359,5401,5443,5483,5533,5591,5642,5693,5744,5797,5844"
+                    }
+                }
+            ]
+        }
+    ]
+}

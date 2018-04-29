@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mdground.screen.view.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="256px"
+                android:layout_height="256px"
+                android:src="@drawable/app_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34px"
+                android:text="@string/app_name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#747474"
+                android:textSize="72px" />
+
+            <LinearLayout
+                android:layout_width="600px"
+                android:layout_height="250px"
+                android:layout_marginTop="120px"
+                android:background="@drawable/box8_nor"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/iv_account"
+                        android:layout_width="70px"
+                        android:layout_height="70px"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:src="@drawable/id_nor" />
+
+                    <EditText
+                        android:id="@+id/et_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24px"
+                        android:layout_toRightOf="@+id/iv_account"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="@string/account"
+                        android:inputType="textPersonName"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:textColor="#cc818081"
+                        android:textSize="40px" />
+
+                    <ImageView
+                        android:id="@+id/iv_clear_account"
+                        android:layout_width="65px"
+                        android:layout_height="65px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/box_delete"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2px"
+                    android:background="#CDCDCD" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/iv_password"
+                        android:layout_width="70px"
+                        android:layout_height="70px"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:src="@drawable/lock_nor" />
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24px"
+                        android:layout_toRightOf="@+id/iv_password"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:textColor="#cc818081"
+                        android:textSize="40px" />
+
+                    <ImageView
+                        android:id="@+id/iv_clear_password"
+                        android:layout_width="65px"
+                        android:layout_height="65px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/box_delete"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="620px"
+                android:layout_height="110px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="34px"
+                android:background="@drawable/login_button_selector"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:padding="20px"
+                android:text="@string/login"
+                android:textColor="#ffffff"
+                android:textSize="40px" />
+        </LinearLayout>
+    </ScrollView>
+
+</com.mdground.screen.view.ResizeLayout>

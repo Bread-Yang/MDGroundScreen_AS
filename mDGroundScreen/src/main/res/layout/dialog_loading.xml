@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/loading_bg"
+    android:orientation="vertical"
+    android:paddingBottom="50px"
+    android:paddingTop="40px" >
+
+    <ImageView
+        android:id="@+id/loading_gif"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@anim/loading"
+        android:enabled="false"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/LoginID"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loading_gif"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="加载中…"
+        android:textColor="#ffffff"
+        android:textSize="32px" />
+
+</RelativeLayout>

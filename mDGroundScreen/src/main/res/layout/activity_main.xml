@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:keepScreenOn="true"
+    android:orientation="vertical" >
+
+    <com.mdground.screen.view.GridViewPager
+        android:id="@+id/gvp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_background"
+        android:paddingBottom="35px"
+        android:paddingLeft="18px"
+        android:paddingRight="18px"
+        android:paddingTop="14px" />
+
+    <FrameLayout
+        android:id="@+id/page_view"
+        android:layout_width="1100px"
+        android:layout_height="110px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/page"
+        android:padding="3px"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/page"
+            style="@style/TextAppearance.Small.Dark.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:textColor="#8c8c8c"
+            android:textSize="35px" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_highlight_num"
+        android:layout_width="fill_parent"
+        android:layout_height="182px"
+        android:background="#E0FF0078"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:text="请  1035  到黄医生处就诊"
+        android:textColor="@android:color/white"
+        android:textSize="100px" />
+    
+    <RadioGroup
+        android:id="@+id/rg_page"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/shape_item_doctor"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42px"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="273px"
+                android:layout_marginLeft="35px"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="365px"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/photo2" />
+
+                <ImageView
+                    android:layout_width="14px"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/effect" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="35px"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_current_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65px"
+                    android:layout_marginTop="10px"
+                    android:text="@string/current_num"
+                    android:textSize="36px" />
+
+                <com.mdground.screen.view.FlickerTextView
+                    android:id="@+id/tv_opNO"
+                    style="@style/TextAppearance.Large.Dark.Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="10px"
+                    android:layout_toRightOf="@+id/tv_current_tips"
+                    android:textSize="210px"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/doctor_name_bg"
+            android:padding="10px" >
+
+            <TextView
+                android:id="@+id/name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="李医生"
+                android:textColor="@android:color/white"
+                android:textSize="60px" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/TextAppearance.Small.Dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:layout_marginTop="25px"
+            android:gravity="center"
+            android:text="@string/next_num"
+            android:textSize="35px" />
+
+        <com.mdground.screen.view.TwoWayGridView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/gridview"
+            android:layout_width="1750px"
+            android:layout_height="420px"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="25px"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:cacheColorHint="@android:color/transparent"
+            app:columnWidth="250px"
+            app:gravity="center"
+            app:horizontalSpacing="1px"
+            app:numColumns="7"
+            app:numRows="4"
+            app:rowHeight="105px"
+            app:scrollDirectionLandscape="horizontal"
+            app:scrollDirectionPortrait="vertical"
+            app:stretchMode="spacingWidthUniform"
+            app:verticalSpacing="0dip" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_clip"
+        android:layout_width="70px"
+        android:layout_height="109px"
+        android:layout_marginLeft="80px"
+        android:src="@drawable/icon_clip" />
+
+</RelativeLayout>
