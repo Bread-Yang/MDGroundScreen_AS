@@ -17,6 +17,7 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.Spanned;
+import android.text.TextUtils;
 import android.text.style.RelativeSizeSpan;
 import android.util.Log;
 import android.util.SparseArray;
@@ -49,16 +50,8 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
 import com.tencent.android.tpush.XGPushManager;
-import com.yanzhenjie.andserver.AndServer;
-import com.yanzhenjie.andserver.RequestHandler;
-import com.yanzhenjie.andserver.Server;
-import com.yanzhenjie.andserver.exception.resolver.ExceptionResolver;
-import com.yanzhenjie.andserver.util.HttpRequestParser;
 
 import org.apache.http.Header;
-import org.apache.httpcore.HttpRequest;
-import org.apache.httpcore.HttpResponse;
-import org.apache.httpcore.protocol.HttpContext;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -70,6 +63,8 @@ import org.mdground.api.server.clinic.GetAppointmentInfoListByDoctor;
 import org.mdground.api.server.clinic.GetDoctorInfoListByScreen;
 
 import java.io.IOException;
+import java.security.SecureRandom;
+import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -80,15 +75,46 @@ import java.util.Queue;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+
 import cn.yunzhisheng.tts.offline.TTSPlayerListener;
 import cn.yunzhisheng.tts.offline.basic.ITTSControl;
 import cn.yunzhisheng.tts.offline.basic.TTSFactory;
 import cn.yunzhisheng.tts.offline.common.USCError;
+import fi.iki.elonen.NanoHTTPD;
 
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListener {
 
     private final String TAG = "UnisoundMainactivity";
+    private static final String TEST_KEYSTORE_PWD = "ssltest";
+    private static final String YIDEGUAN_KEYSTORE_PWD = "yideguanA815";
+
+    /*这类就是要自定义一些返回值，我在这里定义了700。都属于自定义*/
+    enum Status implements NanoHTTPD.Response.IStatus {
+        SWITCH_PROTOCOL(101, "Switching Protocols"),
+        NOT_USE_POST(700, "not use post");
+
+        private final int requestStatus;
+        private final String description;
+
+        Status(int requestStatus, String description) {
+            this.requestStatus = requestStatus;
+            this.description = description;
+        }
+
+        @Override
+        public String getDescription() {
+            return null;
+        }
+
+        @Override
+        public int getRequestStatus() {
+            return 0;
+        }
+    }
 
     private GridViewPager viewPager;
     private RadioGroup rg_page;
@@ -129,7 +155,8 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
 
     private Typeface ttf_NotoSans_Bold, ttf_NotoSans_Regular;
 
-    private Server mServer;
+//    private Server mServer;
+    private HttpServer mHttpServer;
 
     /**
      * 预约是来自wechat的
@@ -161,10 +188,10 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
                 case TIMER_1:
                     Log.e(TAG, "定期检测Server状态");
 
-                    if (!mServer.isRunning()) {
-                        Log.e(TAG, "Server还没启动！！！！！！！！！！！！！！");
-                        mServer.startup();
-                    }
+//                    if (!mServer.isRunning()) {
+//                        Log.e(TAG, "Server还没启动！！！！！！！！！！！！！！");
+//                        mServer.startup();
+//                    }
                     sendEmptyMessageDelayed(TIMER_1, 10000);
                     break;
                 case TIMER_2:
@@ -180,34 +207,34 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
         }
     }
 
-    class CallPatientHandler implements RequestHandler {
-
-        @Override
-        public void handle(final HttpRequest request, HttpResponse response, HttpContext context) {
-
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        Map<String, String> params = HttpRequestParser.parseParams(request);
-
-                        String message = params.get("message");
-
-                        JSONObject json = new JSONObject(message);
-
-                        int opNO = json.getInt("OPNo");
-                        int doctorID = json.getInt("DoctorID");
-
-                        callAction(doctorID, opNO, message);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-        }
-    }
+//    class CallPatientHandler implements RequestHandler {
+//
+//        @Override
+//        public void handle(final HttpRequest request, HttpResponse response, HttpContext context) {
+//
+//            runOnUiThread(new Runnable() {
+//                @Override
+//                public void run() {
+//                    try {
+//                        Map<String, String> params = HttpRequestParser.parseParams(request);
+//
+//                        String message = params.get("message");
+//
+//                        JSONObject json = new JSONObject(message);
+//
+//                        int opNO = json.getInt("OPNo");
+//                        int doctorID = json.getInt("DoctorID");
+//
+//                        callAction(doctorID, opNO, message);
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    } catch (JSONException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            });
+//        }
+//    }
 
     class ClientReciver extends BroadcastReceiver {
 
@@ -328,6 +355,103 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
         }
     }
 
+    private class HttpServer extends NanoHTTPD {
+
+        public HttpServer(int port) {
+            super(port);
+        }
+
+        @Override
+        public Response serve(IHTTPSession session) {
+            /*我在这里做了一个限制，只接受POST请求。这个是项目需求。*/
+            if (Method.POST.equals(session.getMethod())) {
+                Map<String, String> files = new HashMap<String, String>();
+                /*获取header信息，NanoHttp的header不仅仅是HTTP的header，还包括其他信息。*/
+                Map<String, String> header = session.getHeaders();
+
+                try {
+                    /*这句尤为重要就是将将body的数据写入files中，大家可以看看parseBody具体实现，倒现在我也不明白为啥这样写。*/
+                    session.parseBody(files);
+                    /*看就是这里，POST请教的body数据可以完整读出*/
+                    String body = session.getQueryParameterString();
+                    /*这里是从header里面获取客户端的IP地址。NanoHttpd的header包含的东西不止是HTTP heaer的内容*/
+                    header.get("http-client-ip");
+
+                    final String postData = files.get("postData");
+
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            JSONObject json = null;
+                            try {
+                                json = new JSONObject(postData);
+                                int opNO = json.getInt("OPNo");
+                                int doctorID = json.getInt("DoctorID");
+
+                                callAction(doctorID, opNO, postData);
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ResponseException e) {
+                    e.printStackTrace();
+                }
+                /*这里就是为客户端返回的信息了。我这里返回了一个200和一个HelloWorld*/
+                Response response = newFixedLengthResponse(NanoHTTPD.Response.Status.OK, "text/html", "叫号成功");
+
+                response.addHeader("Access-Control-Allow-Origin", "*");
+
+                return response;
+            } else if (Method.GET.equals(session.getMethod())) {
+                String reponseString = null;
+
+                try {
+                    final String message = session.getParms().get("CallMessage");
+
+                    if (TextUtils.isEmpty(message)) {
+                        reponseString = "参数有误！！！";
+                    } else {
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                JSONObject json = null;
+                                try {
+                                    json = new JSONObject(message);
+                                    int opNO = json.getInt("OPNo");
+                                    int doctorID = json.getInt("DoctorID");
+
+                                    callAction(doctorID, opNO, message);
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        });
+                        reponseString = "叫号成功";
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    reponseString = "参数有误！！！";
+                }
+
+                /*这里就是为客户端返回的信息了。我这里返回了一个200和一个HelloWorld*/
+                Response response = newFixedLengthResponse(NanoHTTPD.Response.Status.OK, "text/html", reponseString);
+
+                response.addHeader("Access-Control-Allow-Origin", "*");
+
+                return response;
+            }else {
+                Response response = newFixedLengthResponse(Status.NOT_USE_POST, "text/html", "请使用post");
+
+                response.addHeader("Access-Control-Allow-Origin", "*");
+
+                return response;
+            }
+        }
+    }
+
     @Override
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
@@ -357,6 +481,7 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
         // }, 20000);
 
         createAndServer();
+        createNanoHttpd();
 
         MyTimers timer = new MyTimers();
         timer.sendEmptyMessageDelayed(MyTimers.TIMER_1, 10000);
@@ -372,19 +497,122 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
     }
 
     private void createAndServer() {
-        mServer = AndServer.serverBuilder()
-                .port(9000)
-                .registerHandler("/callPatient", new CallPatientHandler())
-                .exceptionResolver(new ExceptionResolver() {
-                    @Override
-                    public void resolveException(Exception e, HttpRequest request, HttpResponse response, HttpContext context) {
-                        Log.e(TAG, "注册服务器的时候报异常");
-                    }
-                })
-                .build();
+//        mServer = AndServer.serverBuilder()
+////                .sslContext(getSLLContext())
+////                .sslSocketInitializer(new SSLInitializer())
+//                .port(9000)
+//                .registerHandler("/callPatient", new CallPatientHandler())
+//                .exceptionResolver(new ExceptionResolver() {
+//                    @Override
+//                    public void resolveException(Exception e, HttpRequest request, HttpResponse response, HttpContext context) {
+//                        Log.e(TAG, "注册服务器的时候报异常");
+//                    }
+//                })
+//                .build();
+//
+//        mServer.shutdown();
+//        mServer.startup();
+    }
 
-        mServer.shutdown();
-        mServer.startup();
+    private void createNanoHttpd() {
+        mHttpServer = new HttpServer(9000);
+        try {
+//            InputStream inputStream = null;
+//            //选择安全协议的版本
+//            SSLContext ctx = SSLContext.getInstance("TLS");
+//            KeyManagerFactory keyManagers = KeyManagerFactory.getInstance(KeyManagerFactory.getDefaultAlgorithm());
+
+            //选择keystore的储存类型，andorid只支持BKS
+//            KeyStore ks = KeyStore.getInstance("BKS");
+//
+//            inputStream = getResources().openRawResource(R.raw.test);
+//            ks.load(inputStream, TEST_KEYSTORE_PWD.toCharArray());
+//            keyManagers.init(ks, TEST_KEYSTORE_PWD.toCharArray());
+
+//            inputStream = getResources().openRawResource(R.raw.yideguan);
+//            ks.load(inputStream, YIDEGUAN_KEYSTORE_PWD.toCharArray());
+//            keyManagers.init(ks, YIDEGUAN_KEYSTORE_PWD.toCharArray());
+
+
+//            KeyStore trustStore = KeyStore.getInstance("PKCS12", "BC");
+//            trustStore.load(getResources().openRawResource(R.raw.yideguannew), "123456".toCharArray());
+//            keyManagers.init(trustStore, "123456".toCharArray());
+//
+//            ctx.init(keyManagers.getKeyManagers(), null, null);
+//
+//            SSLServerSocketFactory serverSocketFactory = ctx.getServerSocketFactory();
+//            mHttpServer.makeSecure(serverSocketFactory,null);
+
+            mHttpServer.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+//        catch (CertificateException e) {
+//            e.printStackTrace();
+//        } catch (NoSuchAlgorithmException e) {
+//            e.printStackTrace();
+//        } catch (UnrecoverableKeyException e) {
+//            e.printStackTrace();
+//        } catch (KeyStoreException e) {
+//            e.printStackTrace();
+//        } catch (KeyManagementException e) {
+//            e.printStackTrace();
+//        } catch (NoSuchProviderException e) {
+//            e.printStackTrace();
+//        }
+
+//        try {
+//            AssetManager am = getAssets();
+//            //InputStream ins1 = am.open("server.cer");
+//            InputStream ins2 = am.open("android.kbs");
+//
+//            KeyStore keyStore = KeyStore.getInstance(KeyStore.getDefaultType());
+//            keyStore.load(ins2, null);
+//
+//            //读取证书,注意这里的密码必须设置
+//            KeyManagerFactory keyManagerFactory = KeyManagerFactory.getInstance(KeyManagerFactory.getDefaultAlgorithm());
+//            keyManagerFactory.init(keyStore, "android".toCharArray());
+//
+//            mHttpServer.makeSecure(NanoHTTPD.makeSSLSocketFactory(keyStore, keyManagerFactory), null);
+//            mHttpServer.start(NanoHTTPD.SOCKET_READ_TIMEOUT, false);
+//
+//
+//        } catch (IOException e) {
+//            Log.e("IOException", "Couldn't start server:\n" + e.getMessage());
+//        } catch (NumberFormatException e) {
+//            Log.e("NumberFormatException", e.getMessage());
+//        } catch (KeyStoreException  e) {
+//            Log.e("HTTPSException", "HTTPS certificate error:\n " + e.getMessage());
+//        } catch (UnrecoverableKeyException e) {
+//            Log.e("UnrecoverableKeyExcep", "UnrecoverableKeyException" + e.getMessage());
+//        }   catch (CertificateException e) {
+//            e.printStackTrace();
+//        } catch (NoSuchAlgorithmException e) {
+//            e.printStackTrace();
+//        }
+    }
+
+    private SSLContext getSLLContext() {
+        SSLContext sslContext = null;
+        try {
+            sslContext = SSLContext.getInstance("SSL");
+
+            sslContext.init(null, new TrustManager[]{new X509TrustManager() {
+                @Override
+                public void checkClientTrusted(X509Certificate[] chain, String authType)  {}
+
+                @Override
+                public void checkServerTrusted(X509Certificate[] chain, String authType) {}
+
+                @Override
+                public X509Certificate[] getAcceptedIssuers() {
+                    return new X509Certificate[0];
+                }
+            }}, new SecureRandom());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return sslContext;
     }
 
     private void callAction(int doctorID, int opNO, String message) {
@@ -1212,7 +1440,7 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
             } else {
                 showPatientString = patientName + "  ";
             }
-            if (mDoctorsArray.size() > 1) {
+            if (mDoctorsArray.size() > 0) {
                 String showString = "";
                 if (isShowPatientOPNum()) {
                     showString = "请  " + showPatientString + "号到" + doctorName + "处就诊";
@@ -1278,7 +1506,10 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
 
     protected void onDestroy() {
         super.onDestroy();
-        mServer.shutdown();
+//        mServer.shutdown();
+        if (mHttpServer != null) {
+            mHttpServer.stop();
+        }
         // stopPageSwitch();
         unregisterReceiver(mClientRecive);
         unregisterReceiver(xgReceiver);

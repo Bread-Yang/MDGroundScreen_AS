@@ -36,6 +36,10 @@
         "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/loading_10.png"
     },
     {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/raw_yideguannew.pfx.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/raw/yideguannew.pfx"
+    },
+    {
         "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_login_line.9.png.flat",
         "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-hdpi/login_line.9.png"
     },
@@ -102,6 +106,10 @@
     {
         "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-mdpi_emergency.png.flat",
         "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-mdpi/emergency.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/raw_yideguan.bks.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/raw/yideguan.bks"
     },
     {
         "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_box8_nor.9.png.flat",
@@ -362,6 +370,10 @@
     {
         "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat",
         "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/raw_test.keystore.flat",
+        "source": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/res/raw/test.keystore"
     },
     {
         "merged": "/Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/build/intermediates/res/merged/debug/drawable-hdpi_loading_5.png.flat",

@@ -24,12 +24,12 @@ public final class R {
         public static final int main = 0x7f080000;
     }
     public static final class string {
-        public static final int action_settings = 0x7f090001;
-        public static final int app_name = 0x7f090002;
-        public static final int hello_world = 0x7f090005;
+        public static final int action_settings = 0x7f0a0001;
+        public static final int app_name = 0x7f0a0002;
+        public static final int hello_world = 0x7f0a0005;
     }
     public static final class style {
-        public static final int AppBaseTheme = 0x7f0a0002;
-        public static final int AppTheme = 0x7f0a0003;
+        public static final int AppBaseTheme = 0x7f0b0002;
+        public static final int AppTheme = 0x7f0b0003;
     }
 }

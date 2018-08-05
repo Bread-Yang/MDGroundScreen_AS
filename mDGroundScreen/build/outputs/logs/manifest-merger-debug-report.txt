@@ -5,7 +5,6 @@ INJECTED from /Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/Andr
 INJECTED from /Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/AndroidManifest.xml:1:1-174:12
 INJECTED from /Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/AndroidManifest.xml:1:1-174:12
 MERGED from [:mdGroundLib] /Users/robin/Github/MDGroundScreen_AS/mdGroundLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-13:12
-MERGED from [com.yanzhenjie:andserver:1.1.3] /Users/robin/.gradle/caches/transforms-1/files-1.1/andserver-1.1.3.aar/923481708e095c5fa3e8385c083d9337/AndroidManifest.xml:17:1-25:12
 INJECTED from /Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/AndroidManifest.xml:1:1-174:12
 INJECTED from /Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/AndroidManifest.xml:1:1-174:12
 INJECTED from /Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/AndroidManifest.xml:1:1-174:12
@@ -29,8 +28,6 @@ INJECTED from /Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/Andr
 INJECTED from /Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/AndroidManifest.xml:6:5-8:41
 MERGED from [:mdGroundLib] /Users/robin/Github/MDGroundScreen_AS/mdGroundLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:mdGroundLib] /Users/robin/Github/MDGroundScreen_AS/mdGroundLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.yanzhenjie:andserver:1.1.3] /Users/robin/.gradle/caches/transforms-1/files-1.1/andserver-1.1.3.aar/923481708e095c5fa3e8385c083d9337/AndroidManifest.xml:21:5-23:41
-MERGED from [com.yanzhenjie:andserver:1.1.3] /Users/robin/.gradle/caches/transforms-1/files-1.1/andserver-1.1.3.aar/923481708e095c5fa3e8385c083d9337/AndroidManifest.xml:21:5-23:41
 INJECTED from /Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/AndroidManifest.xml:6:5-8:41
 INJECTED from /Users/robin/Github/MDGroundScreen_AS/mDGroundScreen/src/main/AndroidManifest.xml:6:5-8:41
 	android:targetSdkVersion

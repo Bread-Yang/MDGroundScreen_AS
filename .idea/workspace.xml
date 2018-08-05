@@ -7,10 +7,355 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adebd9ad-4b5a-4f5e-8688-833b6a4cd13c" name="Default" comment="" />
+    <list default="true" id="adebd9ad-4b5a-4f5e-8688-833b6a4cd13c" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_nanohttpd_nanohttpd_2_3_1_jar.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/resourceHashesCache.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4.1/javaCompile/classAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4.1/javaCompile/jarAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4.1/javaCompile/javaCompile.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4.1/javaCompile/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.4.1/javaCompile/taskJars.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_yanzhenjie_andserver_1_1_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_yanzhenjie_apache_fileupload_1_3_3_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_yanzhenjie_apache_httpcore_4_4_9_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_commons_io_2_6_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build.gradle" afterPath="$PROJECT_DIR$/mDGroundScreen/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/generated/source/r/debug/com/mdground/screen/R.java" afterPath="$PROJECT_DIR$/mDGroundScreen/build/generated/source/r/debug/com/mdground/screen/R.java" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/generated/source/r/debug/com/yanzhenjie/andserver/R.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/generated/source/r/debug/org/mdground/api/R.java" afterPath="$PROJECT_DIR$/mDGroundScreen/build/generated/source/r/debug/org/mdground/api/R.java" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/blame/res/debug/single/debug.json" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/blame/res/debug/single/debug.json" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/R$string.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/R$style.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/R$style.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/R$styleable.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/R$styleable.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/R.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/R.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/IflyTetTTsMainActivity.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/IflyTetTTsMainActivity.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/LoginActivity.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/LoginActivity.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/MainActivity.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/MainActivity.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$1.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$1.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$2.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$2.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$3$1.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$3$1.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$3$2.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$3$2.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$3.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$3.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$4$1.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$4$1.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$4.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$4.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$5.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$5.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$6.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$6.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$7.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$7.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$AnimateFirstDisplayListener.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$AnimateFirstDisplayListener.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$CallAppointment.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$CallAppointment.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$CallPatientHandler$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$CallPatientHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$ClientReciver$1.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$ClientReciver$1.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$ClientReciver.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$ClientReciver.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$DocotorSingleViewHolder.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$DocotorSingleViewHolder.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$DocotorViewHolder.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$DocotorViewHolder.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$DoctorAdapter$MyRunnable.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$DoctorAdapter$MyRunnable.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$DoctorAdapter.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$DoctorAdapter.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$EXIT_CODE.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$EXIT_CODE.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$MyTimers.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$MyTimers.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$NumAdapter.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$NumAdapter.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$NumViewHolder.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$NumViewHolder.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$XGPushReceiver.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity$XGPushReceiver.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/activity/UnisoundMainactivity.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/utils/UpdateManager.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/utils/UpdateManager.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/view/dialog/LoadingDialog.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/mdground/screen/view/dialog/LoadingDialog.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/com/yanzhenjie/andserver/R.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/org/mdground/api/R$string.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/org/mdground/api/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/org/mdground/api/R$style.class" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/classes/debug/org/mdground/api/R$style.class" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/debug-mergeJavaRes/merge-state" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/NP3+tkMs1x9L7t8GxVgEGv4Ze54=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ODNtOJS5s14qADIh1oBEFWiV_qg=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/VXk87py_9BrGI9nT4E6CK86L4oE=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/aYQcWyB6m3HzStnk7D4Ndsd_RRk=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/debug-mergeJniLibs/merge-state" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/NP3+tkMs1x9L7t8GxVgEGv4Ze54=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/ODNtOJS5s14qADIh1oBEFWiV_qg=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/VXk87py_9BrGI9nT4E6CK86L4oE=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/aYQcWyB6m3HzStnk7D4Ndsd_RRk=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xxhdpi-v4/values-xxhdpi-v4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/mergeDebugResources/merger.xml" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/5IhYZ5I9yl_0c8MgJZSo2EXm+Js=" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/5IhYZ5I9yl_0c8MgJZSo2EXm+Js=" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/WzFxhibkruyaz9fUL+znILjgchI=" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/WzFxhibkruyaz9fUL+znILjgchI=" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/res/debug/resources-debug.ap_" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/symbols/debug/R.txt" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/0.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/0.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/1.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/1.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/10.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/10.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/12.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/12.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/13.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/13.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/14.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/14.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/15.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/15.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/16.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/16.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/17.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/17.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/18.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/18.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/19.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/19.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/2.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/2.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/20.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/20.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/21.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/21.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/22.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/22.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/23.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/23.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/24.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/24.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/25.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/25.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/26.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/26.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/27.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/27.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/28.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/28.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/29.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/29.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/3.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/3.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/30.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/30.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/31.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/31.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/32.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/32.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/33.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/33.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/34.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/34.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/35.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/35.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/36.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/36.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/37.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/37.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/38.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/38.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/4.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/4.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/40.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/40.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/41.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/41.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/42.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/42.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/43.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/43.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/44.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/44.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/45.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/46.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/47.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/48.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/49.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/5.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/5.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/50.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/51.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/52.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/53.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/54.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/55.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/BuildConfig.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/MedicalAppliction$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/MedicalAppliction.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/R$anim.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/R$attr.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/R$color.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/R$dimen.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/R$drawable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/R$layout.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/R$menu.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/R$string.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/R$style.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/R$styleable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/BaseActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$3$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$3$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$4$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$4.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$5.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$6.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$7$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$7.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$AnimateFirstDisplayListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$CallAppointment.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$ClientReciver.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$DocotorSingleViewHolder.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$DocotorViewHolder.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$DoctorAdapter$MyRunnable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$DoctorAdapter.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$EXIT_CODE.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$NumAdapter.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$NumViewHolder.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity$XGPushReceiver.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/IflyTetTTsMainActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/LoginActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/LoginActivity$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/LoginActivity$3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/LoginActivity$4.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/LoginActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$2$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$2$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$3$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$4.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$5.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$6.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$AnimateFirstDisplayListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$CallAppointment.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$ClientReciver$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$ClientReciver.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$DocotorSingleViewHolder.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$DocotorViewHolder.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$DoctorAdapter$MyRunnable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$DoctorAdapter.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$EXIT_CODE.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$NumAdapter.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$NumViewHolder.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity$XGPushReceiver.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/MainActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$3$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$3$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$4$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$4.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$5.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$6.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$7.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$AnimateFirstDisplayListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$CallAppointment.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$CallPatientHandler$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$CallPatientHandler.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$ClientReciver$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$ClientReciver.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$DocotorSingleViewHolder.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$DocotorViewHolder.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$DoctorAdapter$MyRunnable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$DoctorAdapter.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$EXIT_CODE.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$MyTimers.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$NumAdapter.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$NumViewHolder.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity$XGPushReceiver.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/activity/UnisoundMainactivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/bean/DocotorBean$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/bean/DocotorBean.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/constant/MedicalConstant.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/constant/MemberConstant.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/fonts/CustomTypefaceSpan.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/po/XGNotification.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/receiver/BootBroadcastReceiver.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/receiver/ConnectChangeReceiver.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/receiver/MessageReceiver.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/receiver/WifiStateReceiver.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/service/DataService$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/service/DataService.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/socket/Client.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/AppManager.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/DeviceIDUtil.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/L.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/MedicalImageDownload.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/NetworkStatusUtil.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/ParseXmlService.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/PreferenceUtils.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/SharedPreferUtils$ShareKey.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/SharedPreferUtils.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/ShellUtils$CommandResult.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/ShellUtils.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/UpdateManager$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/UpdateManager$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/UpdateManager$3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/UpdateManager$4.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/UpdateManager$downloadApkThread.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/UpdateManager.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/utils/Util_System_Package.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/FlickerTextView$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/FlickerTextView$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/FlickerTextView.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/GridViewPager$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/GridViewPager$BGGridView.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/GridViewPager$GridAdapter.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/GridViewPager$GridPagerAdapter.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/GridViewPager.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/RadioButtonCenter.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/ResizeLayout$OnResizeListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/ResizeLayout.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/ScrollBarDrawable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$CheckForKeyLongPress.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$CheckForLongPress.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$CheckForTap.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$HorizontalTouchHandler$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$HorizontalTouchHandler$HorizontalFlingRunnable$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$HorizontalTouchHandler$HorizontalFlingRunnable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$HorizontalTouchHandler$HorizontalPositionScroller.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$HorizontalTouchHandler.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$LayoutParams.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$OnScrollListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$PerformClick.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$RecycleBin.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$RecyclerListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$SavedState$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$SavedState.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$TouchHandler$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$TouchHandler$FlingRunnable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$TouchHandler$PositionScroller.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$TouchHandler.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$VerticalTouchHandler$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$VerticalTouchHandler$VerticalFlingRunnable$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$VerticalTouchHandler$VerticalFlingRunnable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$VerticalTouchHandler$VerticalPositionScroller.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$VerticalTouchHandler.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView$WindowRunnnable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAbsListView.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAdapterView$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAdapterView$AdapterContextMenuInfo.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAdapterView$AdapterDataSetObserver.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAdapterView$OnItemClickListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAdapterView$OnItemLongClickListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAdapterView$OnItemSelectedListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAdapterView$SelectionNotifier.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayAdapterView.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayGridView$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayGridView$GridBuilder.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayGridView$HorizontalGridBuilder.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayGridView$VerticalGridBuilder.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/TwoWayGridView.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/mdground/screen/view/dialog/LoadingDialog.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/com/yanzhenjie/andserver/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/org/mdground/api/R$dimen.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/org/mdground/api/R$drawable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/org/mdground/api/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/org/mdground/api/R$layout.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/org/mdground/api/R$menu.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/org/mdground/api/R$string.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/org/mdground/api/R$style.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/56/org/mdground/api/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/6.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/6.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/7.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/7.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/8.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/8.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/9.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/9.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexBuilder/debug/__content__.json" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexMerger/debug/0/classes.dex" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexMerger/debug/__content__.json" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/dexMerger/debug/__content__.json" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterPath="$PROJECT_DIR$/mDGroundScreen/build/intermediates/transforms/mergeJavaRes/debug/0.jar" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/outputs/apk/debug/mDGroundScreen-debug.apk" afterPath="$PROJECT_DIR$/mDGroundScreen/build/outputs/apk/debug/mDGroundScreen-debug.apk" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/mDGroundScreen/build/outputs/logs/manifest-merger-debug-report.txt" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/mDGroundScreen.iml" afterPath="$PROJECT_DIR$/mDGroundScreen/mDGroundScreen.iml" />
+      <change beforePath="$PROJECT_DIR$/mDGroundScreen/src/main/java/com/mdground/screen/activity/UnisoundMainactivity.java" afterPath="$PROJECT_DIR$/mDGroundScreen/src/main/java/com/mdground/screen/activity/UnisoundMainactivity.java" />
+      <change beforePath="$PROJECT_DIR$/mdGroundLib/build/intermediates/classes/debug/org/mdground/api/base/GlobalRequest.class" afterPath="$PROJECT_DIR$/mdGroundLib/build/intermediates/classes/debug/org/mdground/api/base/GlobalRequest.class" />
+      <change beforePath="$PROJECT_DIR$/mdGroundLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/mdGroundLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
+      <change beforePath="$PROJECT_DIR$/mdGroundLib/build/intermediates/intermediate-jars/debug/classes.jar" afterPath="$PROJECT_DIR$/mdGroundLib/build/intermediates/intermediate-jars/debug/classes.jar" />
+      <change beforePath="$PROJECT_DIR$/mdGroundLib/build/intermediates/packaged-classes/debug/classes.jar" afterPath="$PROJECT_DIR$/mdGroundLib/build/intermediates/packaged-classes/debug/classes.jar" />
+      <change beforePath="$PROJECT_DIR$/mdGroundLib/build/outputs/aar/mdGroundLib-debug.aar" afterPath="$PROJECT_DIR$/mdGroundLib/build/outputs/aar/mdGroundLib-debug.aar" />
+      <change beforePath="$PROJECT_DIR$/mdGroundLib/src/main/java/org/mdground/api/base/GlobalRequest.java" afterPath="$PROJECT_DIR$/mdGroundLib/src/main/java/org/mdground/api/base/GlobalRequest.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,16 +379,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/mdGroundLib/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            <state relative-caret-position="345">
+              <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mDGroundScreen/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="39" lean-forward="false" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -53,25 +408,101 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Map.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-19/android.jar!/java/util/Map.class">
+      <file leaf-file-name="UnisoundMainactivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mDGroundScreen/src/main/java/com/mdground/screen/activity/UnisoundMainactivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            <state relative-caret-position="331">
+              <caret line="527" column="41" lean-forward="false" selection-start-line="527" selection-start-column="41" selection-end-line="527" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mDGroundScreen/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KeyManagerFactory.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-19/android.jar!/javax/net/ssl/KeyManagerFactory.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="44" column="22" lean-forward="false" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
               <folding>
                 <marker date="1502158797000" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1502158797000" expanded="true" signature="607:749" ph="{...}" />
+                <marker date="1502158797000" expanded="false" signature="137:429" ph="..." />
+                <marker date="1502158797000" expanded="true" signature="566:618" ph="{...}" />
+                <marker date="1502158797000" expanded="false" signature="672:683" ph=" { " />
+                <marker date="1502158797000" expanded="false" signature="719:725" ph=" }" />
+                <marker date="1502158797000" expanded="true" signature="831:883" ph="{...}" />
+                <marker date="1502158797000" expanded="true" signature="1031:1083" ph="{...}" />
+                <marker date="1502158797000" expanded="true" signature="1208:1260" ph="{...}" />
+                <marker date="1502158797000" expanded="false" signature="1300:1311" ph=" { " />
+                <marker date="1502158797000" expanded="false" signature="1347:1353" ph=" }" />
+                <marker date="1502158797000" expanded="false" signature="1394:1405" ph=" { " />
+                <marker date="1502158797000" expanded="false" signature="1441:1447" ph=" }" />
+                <marker date="1502158797000" expanded="true" signature="1584:1636" ph="{...}" />
+                <marker date="1502158797000" expanded="true" signature="1738:1790" ph="{...}" />
+                <marker date="1502158797000" expanded="false" signature="1838:1849" ph=" { " />
+                <marker date="1502158797000" expanded="false" signature="1885:1891" ph=" }" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndServer.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhenjie/andserver/1.1.3/367daabdb7f43b6de50ba1525d0b9493529beb60/andserver-1.1.3-sources.jar!/com/yanzhenjie/andserver/AndServer.java">
+      <file leaf-file-name="NanoHTTPD.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.nanohttpd/nanohttpd/2.3.1/c820129da77c30b2e4ea1cea619d7f589a17bcdd/nanohttpd-2.3.1-sources.jar!/fi/iki/elonen/NanoHTTPD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            <state relative-caret-position="30330">
+              <caret line="2170" column="16" lean-forward="false" selection-start-line="2170" selection-start-column="16" selection-end-line="2170" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GlobalRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mdGroundLib/src/main/java/org/mdground/api/base/GlobalRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+              <folding>
+                <element signature="e#531#532#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetAppointmentInfoListByDoctor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mdGroundLib/src/main/java/org/mdground/api/server/clinic/GetAppointmentInfoListByDoctor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mdGroundLib/src/main/java/org/mdground/api/base/BaseRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="54" column="50" lean-forward="false" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2553#2554#0" expanded="true" />
+                <element signature="e#2572#2573#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,7 +516,19 @@
       <find>intent-f</find>
       <find>DefaultHttpClient(</find>
       <find>CallPatientHandler</find>
+      <find>newFixedLengthResponse</find>
+      <find>use</find>
+      <find>mHttpServer</find>
+      <find>url_activeCenter</find>
+      <find>activeCenter</find>
+      <find>activity_</find>
+      <find>tv_highlight_num</find>
+      <find>KEYSTORE_PWD</find>
+      <find>TEST_KEYSTORE_PWD</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -3074,16 +3517,21 @@
       <list>
         <option value="$PROJECT_DIR$/mDGroundScreen/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/mDGroundScreen/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/mdGroundLib/build.gradle" />
+        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/mDGroundScreen/build.gradle" />
+        <option value="$PROJECT_DIR$/mDGroundScreen/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/mDGroundScreen/src/main/java/com/mdground/screen/activity/UnisoundMainactivity.java" />
+        <option value="$PROJECT_DIR$/mdGroundLib/src/main/java/org/mdground/api/base/GlobalRequest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1280" />
     <option name="height" value="800" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="AndroidView" proportions="" version="1">
@@ -3100,6 +3548,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -3156,9 +3605,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3361,7 +3809,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7478006" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.69061583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55131966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -3383,8 +3831,54 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection>
+                  <UserGroup>
+                    <option name="users">
+                      <list>
+                        <option value="me" />
+                      </list>
+                    </option>
+                  </UserGroup>
+                </collection>
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="me" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -3394,17 +3888,65 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mDGroundScreen/src/main/java/com/mdground/screen/activity/UnisoundMainactivity.java</url>
-          <line>1282</line>
+          <line>520</line>
           <properties />
-          <option name="timeStamp" value="39" />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mDGroundScreen/src/main/java/com/mdground/screen/activity/UnisoundMainactivity.java</url>
+          <line>536</line>
+          <properties />
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="40" />
+      <option name="time" value="54" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="breakpointLogExpression">
+      <expression>
+        <expression-string>&quot;执行了&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>((HTTPSession) session).parms.get(&quot;message&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((HTTPSession) session).parms</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((HTTPSession) session).method</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>r，还包括其他信息。*/                 Map&lt;String, String&gt; header =</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>files</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>body</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>header</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>message</expression-string>
         <language-id>JAVA</language-id>
@@ -3415,44 +3957,133 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>e</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>doctorsIndex</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>doctorID</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>new String(address.getAddress(),&quot;UTF-8&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>address.getAddress()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>address.getHostAddress()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>address.getHostName()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mdGroundLib/src/main/java/org/mdground/api/base/GlobalRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-19/android.jar!/java/util/Map.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhenjie/andserver/1.1.3/367daabdb7f43b6de50ba1525d0b9493529beb60/andserver-1.1.3-sources.jar!/com/yanzhenjie/andserver/AndServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mDGroundScreen/src/main/java/com/mdground/screen/activity/UnisoundMainactivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5655">
+          <caret line="377" column="27" lean-forward="true" selection-start-line="377" selection-start-column="27" selection-end-line="377" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mDGroundScreen/src/main/java/com/mdground/screen/activity/UnisoundMainactivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5535">
+          <caret line="369" column="59" lean-forward="false" selection-start-line="369" selection-start-column="59" selection-end-line="369" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-19/android.jar!/java/util/Map.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhenjie/andserver/1.1.3/367daabdb7f43b6de50ba1525d0b9493529beb60/andserver-1.1.3-sources.jar!/com/yanzhenjie/andserver/AndServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mdGroundLib/src/main/java/org/mdground/api/base/GlobalRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-19/android.jar!/java/util/Map.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhenjie/andserver/1.1.3/367daabdb7f43b6de50ba1525d0b9493529beb60/andserver-1.1.3-sources.jar!/com/yanzhenjie/andserver/AndServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3473,7 +4104,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3481,7 +4111,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="49" lean-forward="false" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2553#2554#0" expanded="true" />
+            <element signature="e#2572#2573#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3505,40 +4139,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2295">
           <caret line="153" column="0" lean-forward="true" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
-          <folding>
-            <element signature="e#3859#3867#0" expanded="true" />
-            <element signature="e#3934#3951#0" expanded="true" />
-            <element signature="e#4046#4078#0" expanded="true" />
-            <element signature="e#4394#4402#0" expanded="true" />
-            <element signature="e#4634#4640#0" expanded="true" />
-            <element signature="e#6258#7009#0" expanded="true" />
-            <element signature="e#7008#7009#0" expanded="true" />
-            <element signature="e#7197#9279#0" expanded="true" />
-            <element signature="e#9278#9279#0" expanded="true" />
-            <element signature="e#12463#12506#0" expanded="true" />
-            <element signature="e#13539#13814#0" expanded="true" />
-            <element signature="e#13813#13814#0" expanded="true" />
-            <element signature="e#20411#20738#0" expanded="true" />
-            <element signature="e#20737#20738#0" expanded="true" />
-            <element signature="e#20983#21120#0" expanded="true" />
-            <element signature="e#21119#21120#0" expanded="true" />
-            <element signature="e#21850#21863#0" expanded="true" />
-            <element signature="e#24128#24325#0" expanded="true" />
-            <element signature="e#24324#24325#0" expanded="true" />
-            <element signature="e#26970#26990#0" expanded="true" />
-            <element signature="e#27069#27093#0" expanded="true" />
-            <element signature="e#28772#28792#0" expanded="true" />
-            <element signature="e#28978#29002#0" expanded="true" />
-            <element signature="e#29506#29526#0" expanded="true" />
-            <element signature="e#29724#29748#0" expanded="true" />
-            <element signature="e#37574#37587#0" expanded="true" />
-            <element signature="e#42114#42384#0" expanded="true" />
-            <element signature="e#42383#42384#0" expanded="true" />
-            <element signature="e#42547#42885#0" expanded="true" />
-            <element signature="e#42884#42885#0" expanded="true" />
-            <element signature="e#48293#49414#0" expanded="true" />
-            <element signature="e#49413#49414#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3546,10 +4147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <marker date="1502158797000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1502158797000" expanded="true" signature="607:749" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3557,7 +4154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3576,25 +4172,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdGroundLib/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mDGroundScreen/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mDGroundScreen/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="149" column="19" lean-forward="false" selection-start-line="149" selection-start-column="19" selection-end-line="149" selection-end-column="19" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.gradle/gradle.properties">
@@ -3626,19 +4222,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhenjie/andserver/1.1.3/367daabdb7f43b6de50ba1525d0b9493529beb60/andserver-1.1.3-sources.jar!/com/yanzhenjie/andserver/AndServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3649,87 +4236,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhenjie/andserver/1.1.3/367daabdb7f43b6de50ba1525d0b9493529beb60/andserver-1.1.3-sources.jar!/com/yanzhenjie/andserver/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="61" column="16" lean-forward="false" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-19/android.jar!/java/util/Map.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <marker date="1502158797000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1502158797000" expanded="true" signature="607:749" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mDGroundScreen/src/main/java/com/mdground/screen/activity/UnisoundMainactivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="370" column="37" lean-forward="true" selection-start-line="370" selection-start-column="37" selection-end-line="370" selection-end-column="37" />
-          <folding>
-            <element signature="e#3859#3867#0" expanded="true" />
-            <element signature="e#3934#3951#0" expanded="true" />
-            <element signature="e#4046#4078#0" expanded="true" />
-            <element signature="e#4394#4402#0" expanded="true" />
-            <element signature="e#4634#4640#0" expanded="true" />
-            <element signature="e#6258#7009#0" expanded="true" />
-            <element signature="e#7008#7009#0" expanded="true" />
-            <element signature="e#7197#9279#0" expanded="true" />
-            <element signature="e#9278#9279#0" expanded="true" />
-            <element signature="e#12463#12506#0" expanded="true" />
-            <element signature="e#13539#13814#0" expanded="true" />
-            <element signature="e#13813#13814#0" expanded="true" />
-            <element signature="e#20411#20738#0" expanded="true" />
-            <element signature="e#20737#20738#0" expanded="true" />
-            <element signature="e#20983#21120#0" expanded="true" />
-            <element signature="e#21119#21120#0" expanded="true" />
-            <element signature="e#21850#21863#0" expanded="true" />
-            <element signature="e#24128#24325#0" expanded="true" />
-            <element signature="e#24324#24325#0" expanded="true" />
-            <element signature="e#26970#26990#0" expanded="true" />
-            <element signature="e#27069#27093#0" expanded="true" />
-            <element signature="e#28772#28792#0" expanded="true" />
-            <element signature="e#28978#29002#0" expanded="true" />
-            <element signature="e#29506#29526#0" expanded="true" />
-            <element signature="e#29724#29748#0" expanded="true" />
-            <element signature="e#37574#37587#0" expanded="true" />
-            <element signature="e#42114#42384#0" expanded="true" />
-            <element signature="e#42383#42384#0" expanded="true" />
-            <element signature="e#42547#42885#0" expanded="true" />
-            <element signature="e#42884#42885#0" expanded="true" />
-            <element signature="e#48293#49414#0" expanded="true" />
-            <element signature="e#49413#49414#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mDGroundScreen/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mdGroundLib/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mdGroundLib/src/main/java/org/mdground/api/base/BaseRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="32" column="49" lean-forward="false" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3737,6 +4247,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-19/android.jar!/javax/net/ssl/SSLServerSocket.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="40" column="25" lean-forward="false" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhenjie/andserver/1.1.3/367daabdb7f43b6de50ba1525d0b9493529beb60/andserver-1.1.3-sources.jar!/com/yanzhenjie/andserver/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="76" column="16" lean-forward="false" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/mdGroundLib/libs/android-async-http-1.4.5.jar!/com/loopj/android/http/AsyncHttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="69" column="13" lean-forward="false" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mdGroundLib/src/main/java/org/mdground/api/base/BaseRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="54" column="50" lean-forward="false" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2553#2554#0" expanded="true" />
+            <element signature="e#2572#2573#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mdGroundLib/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-19/android.jar!/javax/net/ssl/SSLContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mdGroundLib/src/main/java/org/mdground/api/server/clinic/GetAppointmentInfoListByDoctor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mDGroundScreen/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="39" lean-forward="false" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -3745,6 +4326,71 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mDGroundScreen/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.nanohttpd/nanohttpd/2.3.1/c820129da77c30b2e4ea1cea619d7f589a17bcdd/nanohttpd-2.3.1-sources.jar!/fi/iki/elonen/NanoHTTPD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30330">
+          <caret line="2170" column="16" lean-forward="false" selection-start-line="2170" selection-start-column="16" selection-end-line="2170" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-19/android.jar!/javax/net/ssl/KeyManagerFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="44" column="22" lean-forward="false" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <folding>
+            <marker date="1502158797000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1502158797000" expanded="false" signature="137:429" ph="..." />
+            <marker date="1502158797000" expanded="true" signature="566:618" ph="{...}" />
+            <marker date="1502158797000" expanded="false" signature="672:683" ph=" { " />
+            <marker date="1502158797000" expanded="false" signature="719:725" ph=" }" />
+            <marker date="1502158797000" expanded="true" signature="831:883" ph="{...}" />
+            <marker date="1502158797000" expanded="true" signature="1031:1083" ph="{...}" />
+            <marker date="1502158797000" expanded="true" signature="1208:1260" ph="{...}" />
+            <marker date="1502158797000" expanded="false" signature="1300:1311" ph=" { " />
+            <marker date="1502158797000" expanded="false" signature="1347:1353" ph=" }" />
+            <marker date="1502158797000" expanded="false" signature="1394:1405" ph=" { " />
+            <marker date="1502158797000" expanded="false" signature="1441:1447" ph=" }" />
+            <marker date="1502158797000" expanded="true" signature="1584:1636" ph="{...}" />
+            <marker date="1502158797000" expanded="true" signature="1738:1790" ph="{...}" />
+            <marker date="1502158797000" expanded="false" signature="1838:1849" ph=" { " />
+            <marker date="1502158797000" expanded="false" signature="1885:1891" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mdGroundLib/src/main/java/org/mdground/api/base/GlobalRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mDGroundScreen/src/main/java/com/mdground/screen/activity/UnisoundMainactivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="527" column="41" lean-forward="false" selection-start-line="527" selection-start-column="41" selection-end-line="527" selection-end-column="41" />
           <folding />
         </state>
       </provider>
