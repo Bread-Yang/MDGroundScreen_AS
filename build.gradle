@@ -26,7 +26,6 @@ allprojects {
         androidVersionCode = 1
         androidVersionName = "0.1"
 
-
         // Compile dependencies
         supportVersion = "19.1.0"
         ankoVersion= "0.10.4"
