@@ -20,23 +20,23 @@
             android:orientation="vertical" >
 
             <ImageView
-                android:layout_width="256px"
-                android:layout_height="256px"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
                 android:src="@drawable/app_icon" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="34px"
+                android:layout_marginTop="17dp"
                 android:text="@string/app_name"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="#747474"
-                android:textSize="72px" />
+                android:textSize="36dp" />
 
             <LinearLayout
-                android:layout_width="600px"
-                android:layout_height="250px"
-                android:layout_marginTop="120px"
+                android:layout_width="300dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="60dp"
                 android:background="@drawable/box8_nor"
                 android:orientation="vertical" >
 
@@ -47,11 +47,11 @@
 
                     <ImageView
                         android:id="@+id/iv_account"
-                        android:layout_width="70px"
-                        android:layout_height="70px"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_alignParentLeft="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="30px"
+                        android:layout_marginLeft="15dp"
                         android:src="@drawable/id_nor" />
 
                     <EditText
@@ -59,7 +59,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="24px"
+                        android:layout_marginLeft="12dp"
                         android:layout_toRightOf="@+id/iv_account"
                         android:background="@null"
                         android:ems="10"
@@ -68,12 +68,12 @@
                         android:maxLength="20"
                         android:maxLines="1"
                         android:textColor="#cc818081"
-                        android:textSize="40px" />
+                        android:textSize="20dp" />
 
                     <ImageView
                         android:id="@+id/iv_clear_account"
-                        android:layout_width="65px"
-                        android:layout_height="65px"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:src="@drawable/box_delete"
@@ -82,7 +82,7 @@
 
                 <View
                     android:layout_width="fill_parent"
-                    android:layout_height="2px"
+                    android:layout_height="1dp"
                     android:background="#CDCDCD" />
 
                 <RelativeLayout
@@ -92,11 +92,11 @@
 
                     <ImageView
                         android:id="@+id/iv_password"
-                        android:layout_width="70px"
-                        android:layout_height="70px"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_alignParentLeft="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="30px"
+                        android:layout_marginLeft="15dp"
                         android:src="@drawable/lock_nor" />
 
                     <EditText
@@ -104,7 +104,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginLeft="24px"
+                        android:layout_marginLeft="12dp"
                         android:layout_toRightOf="@+id/iv_password"
                         android:background="@null"
                         android:ems="10"
@@ -113,12 +113,12 @@
                         android:maxLength="20"
                         android:maxLines="1"
                         android:textColor="#cc818081"
-                        android:textSize="40px" />
+                        android:textSize="20dp" />
 
                     <ImageView
                         android:id="@+id/iv_clear_password"
-                        android:layout_width="65px"
-                        android:layout_height="65px"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:src="@drawable/box_delete"
@@ -128,17 +128,17 @@
 
             <Button
                 android:id="@+id/btn_login"
-                android:layout_width="620px"
-                android:layout_height="110px"
+                android:layout_width="310dp"
+                android:layout_height="55dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="34px"
+                android:layout_marginTop="17dp"
                 android:background="@drawable/login_button_selector"
                 android:gravity="center"
                 android:onClick="onClick"
-                android:padding="20px"
+                android:padding="10dp"
                 android:text="@string/login"
                 android:textColor="#ffffff"
-                android:textSize="40px" />
+                android:textSize="20dp" />
         </LinearLayout>
     </ScrollView>
 
