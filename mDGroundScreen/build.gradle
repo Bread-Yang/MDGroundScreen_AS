@@ -8,14 +8,43 @@ android {
         applicationId "com.mdground.screen"
         minSdkVersion parent.ext.androidMinSdkVersion
         targetSdkVersion parent.ext.androidTargetSdkVersion
+        versionCode parent.ext.androidVersionCode
+        versionName parent.ext.androidVersionName
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("YiDeGuan_Keystore.jks")
+            storePassword "13560506833"
+            keyAlias "yoghourt"
+            keyPassword "13560506833"
+        }
     }
 
     buildTypes {
+        debug {
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
         }
     }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            //生成apk名的格式：yizhida_v1.0.0.0824_2018-05-21.apk
+            def fileName = "导诊屏_v${defaultConfig.versionName}_${variant.buildType.name}_${releaseTime()}.apk"
+//                  output.outputFile = new File(outputFile.parent, fileName)
+            outputFileName = fileName
+        }
+    }
+}
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
 }
 
 dependencies {

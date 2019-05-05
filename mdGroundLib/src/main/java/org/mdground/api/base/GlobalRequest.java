@@ -2,14 +2,10 @@ package org.mdground.api.base;
 
 import android.content.Context;
 
+import org.mdground.api.BuildConfig;
+
 
 public abstract class GlobalRequest extends BaseRequest {
-
-//	private static final String GLOBAL_SERVER = "https://g.yideguan.com/api/RpcService.ashx";
-	// 修改版本号 // 修改版本号 // 修改版本号 // 修改版本号 // 修改版本号 // 修改版本号 // 修改版本号 // 修改版本号 // 修改版本号
-	private static final String GLOBAL_SERVER = "https://guat.yideguan.com/api/RpcService.ashx";
-
-//	private static final String GLOBAL_SERVER = "http://192.168.0.107:8000/api/RpcService.ashx";
 
 	public GlobalRequest(Context context) {
 		super(context);
@@ -17,7 +13,7 @@ public abstract class GlobalRequest extends BaseRequest {
 
 	@Override
 	protected String getUrl() {
-		return GLOBAL_SERVER;
+		return BuildConfig.GLOBAL_HOST;
 	}
 
 	@Override
