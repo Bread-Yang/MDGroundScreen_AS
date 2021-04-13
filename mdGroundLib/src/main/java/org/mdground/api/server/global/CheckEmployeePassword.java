@@ -3,6 +3,7 @@ package org.mdground.api.server.global;
 import org.mdground.api.base.GlobalRequest;
 import org.mdground.api.base.RequestCallBack;
 import org.mdground.api.base.RequestData;
+import org.mdground.api.utils.DebugUtil;
 
 import android.content.Context;
 import android.util.Log;
@@ -22,7 +23,7 @@ public class CheckEmployeePassword extends GlobalRequest {
 
 	public void checkEmployeePwd(String password, RequestCallBack listener) {
 		if (password == null || password.equals("")) {
-			Log.e(TAG, "password is null");
+			DebugUtil.e(TAG, "password is null");
 			return;
 		}
 		setRequestCallBack(listener);

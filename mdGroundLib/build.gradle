@@ -7,20 +7,20 @@ android {
     defaultConfig {
         minSdkVersion parent.ext.androidMinSdkVersion
         targetSdkVersion parent.ext.androidTargetSdkVersion
+        useLibrary 'org.apache.http.legacy'
 
         // 测试服务器
 //        buildConfigField("String", "GLOBAL_HOST", "\"https://guat.yideguan.com/api/RpcService.ashx\"")
 //        buildConfigField("String", "FILE_HOST", "\"http://fuat.yideguan.com/Api/RpcService.ashx\"")
 
-        // 正式服务器
-        buildConfigField("String", "GLOBAL_HOST", "\"https://g.yideguan.com/api/RpcService.ashx\"")
-        buildConfigField("String", "FILE_HOST", "\"https://file.yideguan.com/api/RpcService.ashx\"")
+        // 正式服务器2
+        buildConfigField("String", "GLOBAL_HOST", "\"http://g.yideguan.com/api/RpcService.ashx\"")
+        buildConfigField("String", "FILE_HOST", "\"http://file.yideguan.com/api/RpcService.ashx\"")
     }
 }
 
 dependencies {
     api fileTree(dir: 'libs', include: '*.jar')
-
-    implementation "com.android.support:support-v4:$supportVersion"
-    api 'com.google.code.gson:gson:2.2.4'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    api 'com.google.code.gson:gson:2.8.2'
 }

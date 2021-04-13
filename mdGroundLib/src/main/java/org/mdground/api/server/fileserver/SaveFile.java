@@ -10,6 +10,7 @@ import java.net.URLEncoder;
 import org.mdground.api.base.FileServerRequest;
 import org.mdground.api.base.RequestCallBack;
 import org.mdground.api.base.RequestData;
+import org.mdground.api.utils.DebugUtil;
 
 import android.content.Context;
 import android.util.Base64;
@@ -37,7 +38,7 @@ public class SaveFile extends FileServerRequest {
 
 		long fileSize = file.length();
 		if (fileSize > Integer.MAX_VALUE) {
-			Log.e(TAG, "file too big...");
+			DebugUtil.e(TAG, "file too big...");
 			return;
 		}
 
@@ -72,7 +73,7 @@ public class SaveFile extends FileServerRequest {
 		}
 
 		if (buffer == null || buffer.length == 0) {
-			Log.e(TAG, "read file failed");
+			DebugUtil.e(TAG, "read file failed");
 			return;
 		}
 

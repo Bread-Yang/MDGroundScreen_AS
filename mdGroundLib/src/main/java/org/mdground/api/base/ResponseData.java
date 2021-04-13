@@ -5,6 +5,8 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 public class ResponseData {
+	public  static String CurrentPostString;
+	public  static String CurrentEncryptPostString;
 
 	// / 响应编码
 	public int Code;

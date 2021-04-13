@@ -4,6 +4,7 @@ import org.mdground.api.MdgAppliction;
 import org.mdground.api.base.GlobalRequest;
 import org.mdground.api.base.RequestCallBack;
 import org.mdground.api.bean.Device;
+import org.mdground.api.utils.DebugUtil;
 
 import android.content.Context;
 import android.util.Log;
@@ -27,7 +28,7 @@ public class LoginEmployee extends GlobalRequest {
 	// 用户登录
 	public void loginEmployee(String loginId, String pwd, Device device, RequestCallBack listener) {
 		if (loginId == null || pwd == null || device == null) {
-			Log.e(TAG, "employee or device is null");
+			DebugUtil.e(TAG, "employee or device is null");
 			return;
 		}
 

@@ -5,12 +5,30 @@ android {
     buildToolsVersion parent.ext.androidBuildToolsVersion
 
     defaultConfig {
+        useLibrary'org.apache.http.legacy'
+
         applicationId "com.mdground.screen"
         minSdkVersion parent.ext.androidMinSdkVersion
         targetSdkVersion parent.ext.androidTargetSdkVersion
         versionCode parent.ext.androidVersionCode
         versionName parent.ext.androidVersionName
+//        ndk {
+//            abiFilters "armeabi", "armeabi-v7a", "x86"
+//        }
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+//            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a','x86' , 'x86_64'
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+            //, 'mips', 'mips64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+//            manifestPlaceholders = [
+//                    XG_ACCESS_ID:"2100144128",
+//                    XG_ACCESS_KEY:"AK4493K4JNCD",
+//            ]
+        }
+
     }
+
 
     signingConfigs {
         release {
@@ -36,23 +54,27 @@ android {
         variant.outputs.all { output ->
             def outputFile = output.outputFile
             //生成apk名的格式：yizhida_v1.0.0.0824_2018-05-21.apk
-            def fileName = "导诊屏_v${defaultConfig.versionName}_${variant.buildType.name}_${releaseTime()}.apk"
+            def fileName = "guide_hospital_v${defaultConfig.versionName}_${variant.buildType.name}_${releaseTime()}.apk"
 //                  output.outputFile = new File(outputFile.parent, fileName)
             outputFileName = fileName
         }
     }
+
+
+
 }
 
-def releaseTime() {
+static def releaseTime() {
     return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
 }
 
 dependencies {
+    implementation fileTree(include: ['*.aar', '*.jar'], exclude: [], dir: 'libs')
     implementation project(':mdGroundLib')
-
-    implementation fileTree(dir: 'libs', include: '*.jar')
-
-    implementation "com.android.support:support-v4:$supportVersion"
-//    implementation 'com.yanzhenjie:andserver:1.1.3'
     implementation 'org.nanohttpd:nanohttpd:2.3.1'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.zhy:percent-support-extends:1.1.1'
+    implementation 'com.snail:antifake:1.4'
 }

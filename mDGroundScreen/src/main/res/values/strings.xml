@@ -1,8 +1,8 @@
 <resources>
 
     <string name="app_name">医直达</string>
-    <string name="current_num">当前就诊号</string>
-    <string name="current_patient">当前就诊病人</string>
+    <string name="current_num">当前就诊</string>
+    <string name="current_patient">当前就诊</string>
     <string name="next_num">下一位:</string>
     <string name="login">登录</string>
     <string name="account">账号</string>

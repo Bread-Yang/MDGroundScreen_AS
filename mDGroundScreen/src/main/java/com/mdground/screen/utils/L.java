@@ -1,14 +1,17 @@
 package com.mdground.screen.utils;
 
+import android.util.Config;
 import android.util.Log;
+
+import com.mdground.screen.BuildConfig;
 
 public class L {
 
+
 	// 发布打包时需要设置为false
-	private static final boolean DEBUG = false;
 
 	public static void e(Object object, String msg) {
-		if (DEBUG) {
+		if ( BuildConfig.DEBUG) {
 			String className = object.getClass().getSimpleName();
 			// Log.e(className, msg);
 

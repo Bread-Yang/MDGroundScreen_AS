@@ -5,6 +5,7 @@ import org.json.JSONObject;
 import org.mdground.api.base.GlobalRequest;
 import org.mdground.api.base.RequestCallBack;
 import org.mdground.api.base.RequestData;
+import org.mdground.api.utils.DebugUtil;
 
 import android.content.Context;
 import android.util.Log;
@@ -23,7 +24,7 @@ public class CheckEmployeePhone extends GlobalRequest {
 
 	public void checkEmployeePhone(String phone, RequestCallBack listener) {
 		if (phone == null || phone.equals("")) {
-			Log.e(TAG, "phone is null");
+			DebugUtil.e(TAG, "phone is null");
 			return;
 		}
 		setRequestCallBack(listener);

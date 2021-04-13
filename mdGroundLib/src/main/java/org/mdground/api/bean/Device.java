@@ -73,4 +73,16 @@ public class Device {
 		CreatedTime = createdTime;
 	}
 
+	@Override
+	public String toString() {
+		return "Device{" +
+				"DeviceID=" + DeviceID +
+				", DeviceToken='" + DeviceToken + '\'' +
+				", ClinicID=" + ClinicID +
+				", Platform=" + Platform +
+				", PlatformVersion='" + PlatformVersion + '\'' +
+				", DeviceModel='" + DeviceModel + '\'' +
+				", CreatedTime=" + CreatedTime +
+				'}';
+	}
 }

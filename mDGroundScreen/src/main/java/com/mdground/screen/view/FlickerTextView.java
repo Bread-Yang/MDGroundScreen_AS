@@ -5,14 +5,16 @@ import java.util.TimerTask;
 
 import com.mdground.screen.R;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
 
-public class FlickerTextView extends TextView {
+public class FlickerTextView extends AppCompatTextView {
 	private static final String LOG_TAG = "FlickerTextView";
 	boolean change = false;
 	private Handler handler = null;
@@ -30,18 +32,21 @@ public class FlickerTextView extends TextView {
 		super(context);
 	}
 
-	public void startFlicker(String message) {
+	@SuppressLint("HandlerLeak")
+	public void startFlicker(final String message) {
 		setVisibility(View.VISIBLE);
-		setText(message);
+
 		handler = new Handler() {
 			@Override
 			public void dispatchMessage(Message msg) {
 				if (change) {
 					change = false;
-					setTextColor(getResources().getColor(R.color.font_dark));
+					setTextColor(getResources().getColor(R.color.white));
+					setText(message);
 				} else {
 					change = true;
 					setTextColor(getResources().getColor(R.color.font_blue));
+					setText(message);
 				}
 			}
 		};
@@ -64,6 +69,6 @@ public class FlickerTextView extends TextView {
 		if (timer != null) {
 			timer.cancel();
 		}
-		setTextColor(getResources().getColor(R.color.font_dark));
+		setTextColor(getResources().getColor(R.color.white));
 	}
 }

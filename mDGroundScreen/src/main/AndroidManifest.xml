@@ -1,22 +1,52 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.mdground.screen">
 
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.RESTART_PACKAGES" />
-    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission." />
+    <uses-permission android:name="android.permission.WAKE_BROADCAST_STICKYLOCK" />
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
     <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
-    <uses-permission android:name="android.permission.GET_TASKS" />
-    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.GETXGPushService_TASKS" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 增加厂商权限 -->
+    <!-- 兼容flyme5.0以下版本，魅族内部集成pushSDK必填，不然无法收到消息-->
+    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE"></uses-permission>
+    <permission android:name="com.mdground.screen.push.permission.MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.mdground.screen.push.permission.MESSAGE"></uses-permission>
+    <!--  兼容flyme3.0配置权限-->
+    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE" />
+    <permission android:name="com.mdground.screen.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"></permission>
+    <uses-permission android:name="com.mdground.screen.permission.C2D_MESSAGE"/>
+    <!-- 注：魅族push 需要的权限 end -->
+    <!--小米所需权限-->
+    <permission
+        android:name="com.mdground.screen.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.mdground.screen.permission.MIPUSH_RECEIVE" />
 
     <supports-screens
         android:largeScreens="true"
@@ -25,23 +55,35 @@
         android:xlargeScreens="true" />
 
     <application
-        android:name="com.mdground.screen.MedicalAppliction"
+        android:name="com.mdground.screen.MedicalApplication"
         android:allowBackup="true"
         android:icon="@drawable/app_icon"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
-        <service android:name="com.mdground.screen.service.DataService" >
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+
+        <service android:name="com.mdground.screen.service.DataService">
             <intent-filter>
                 <action android:name="com.mdground.screen.service.DataService" />
             </intent-filter>
         </service>
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/network_security_config" />
 
         <activity
             android:name=".activity.LoginActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="landscape"
+           android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity"
             android:theme="@android:style/Theme.Light.NoTitleBar"
-            android:windowSoftInputMode="adjustResize" >
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -53,20 +95,23 @@
         <activity
             android:name=".activity.MainActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="landscape" >
-        </activity>
+           android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
         <activity
             android:name=".activity.IflyTetTTsMainActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="landscape" >
-        </activity>
+           android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
         <activity
-            android:name=".activity.UnisoundMainactivity"
+            android:name=".activity.UnisoundMainActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="landscape" >
-        </activity>
-        
-        <receiver android:name="com.mdground.screen.receiver.ConnectChangeReceiver" >
+           android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+
+        <receiver android:name="com.mdground.screen.receiver.ConnectChangeReceiver">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
                 <action android:name="android.net.wifi.STATE_CHANGE" />
@@ -74,95 +119,116 @@
                 <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
             </intent-filter>
         </receiver>
-        
-        <activity
-            android:name="com.tencent.android.tpush.XGPushActivity"
-            android:exported="false" >
-        </activity>
-        
-        <receiver android:name="com.mdground.screen.receiver.MessageReceiver" >
-            <intent-filter>
 
-                <!-- 接收消息透传 -->
-                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
-                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
-                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
-            </intent-filter>
-        </receiver>
-        
-        <service
-            android:name="com.tencent.android.tpush.service.XGPushServiceV3"
-            android:exported="true"
-            android:persistent="true"
-            android:process=":xg_service_v3" />
-
-        <service
-            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
-            android:exported="true" >
-            <intent-filter>
-
-                <!-- 【必须】 请修改为当前APP名包.PUSH_ACTION，如demo的包名为：com.qq.xgdemo -->
-                <action android:name="com.mdground.screen.PUSH_ACTION" />
-            </intent-filter>
-        </service>
-        
-        <provider
-           android:name="com.tencent.android.tpush.XGPushProvider"
-           android:authorities="com.mdground.screen.AUTH_XGPUSH"
-           android:exported="true"
-           />    
-           
-        <provider
-           android:name="com.tencent.android.tpush.SettingsContentProvider"
-           android:authorities="com.mdground.screen.TPUSH_PROVIDER"
-           android:exported="false" />
-        
-        <provider
-           android:name="com.tencent.mid.api.MidProvider"
-           android:authorities="com.mdground.screen.TENCENT.MID.V3"
-           android:exported="true" >
-       </provider>
-           
-        <!-- 【必须】 信鸽receiver广播接收 -->
-        <receiver
-            android:name="com.tencent.android.tpush.XGPushReceiver"
-            android:process=":xg_service_v2" >
-            <intent-filter android:priority="0x7fffffff" >
-
-                <!-- 【必须】 信鸽SDK的内部广播 -->
-                <action android:name="com.tencent.android.tpush.action.SDK" />
-                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
-                <!-- 【必须】 系统广播：开屏和网络切换 -->
-                <action android:name="android.intent.action.USER_PRESENT" />
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-
-                <!-- 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service -->
-                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
-                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-            </intent-filter>
-        </receiver>
-
-        <!--
-        <receiver android:name="com.mdground.screen.receiver.BootBroadcastReceiver" >
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" >
-                </action>
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </receiver>
-        -->
+<!--        <activity-->
+<!--            android:name="com.tencent.android.tpush.XGPushActivity"-->
+<!--            android:exported="false">-->
+<!--            <intent-filter>-->
+<!--                &lt;!&ndash; 若使用AndroidStudio，请设置android:name="android.intent.action"&ndash;&gt;-->
+<!--                <action android:name="android.intent.action" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
 
 
-        <!-- 【必须】 请修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
-        <meta-data
-            android:name="XG_V2_ACCESS_ID"
-            android:value="2100144128" />
-        <!-- 【必须】 请修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
-        <meta-data
-            android:name="XG_V2_ACCESS_KEY"
-            android:value="AK4493K4JNCD" />
+
+<!--        <receiver android:name="com.mdground.screen.receiver.MessageReceiver"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+
+<!--                &lt;!&ndash; 接收消息透传 &ndash;&gt;-->
+<!--                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />-->
+<!--                &lt;!&ndash; 监听注册、反注册、设置/删除标签、通知被点击等处理结果 &ndash;&gt;-->
+<!--                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+
+<!--        <service-->
+<!--            android:name="com.tencent.android.tpush.service.XGPushServiceV4"-->
+<!--            android:exported="true"-->
+<!--            android:persistent="true"-->
+<!--            android:process=":xg_service_v4" />-->
+
+<!--        <service-->
+<!--            android:name="com.tencent.android.tpush.rpc.XGRemoteService"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+
+<!--                &lt;!&ndash; 【必须】 请修改为当前APP名包.PUSH_ACTION，如demo的包名为：com.qq.xgdemo &ndash;&gt;-->
+<!--                <action android:name="com.mdground.screen.PUSH_ACTION" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+<!--        <provider-->
+<!--            android:name="com.tencent.android.tpush.XGPushProvider"-->
+<!--            android:authorities="com.mdground.screen.AUTH_XGPUSH"-->
+<!--            android:exported="true" />-->
+
+<!--        <provider-->
+<!--            android:name="com.tencent.android.tpush.SettingsContentProvider"-->
+<!--            android:authorities="com.mdground.screen.TPUSH_PROVIDER"-->
+<!--            android:exported="false" />-->
+
+
+<!--        &lt;!&ndash; 【必须】 【注意】authorities修改为 包名.TENCENT.MID.V4, 如demo的包名为：com.qq.xgdemo&ndash;&gt;-->
+<!--        <provider-->
+<!--            android:name="com.tencent.mid.api.MidProvider"-->
+<!--            android:authorities="com.mdground.screen.TENCENT.MID.V4"-->
+<!--            android:exported="true" >-->
+<!--        </provider>-->
+
+
+<!--        <receiver-->
+<!--            android:name="com.tencent.android.tpush.XGPushReceiver"-->
+<!--            android:process=":xg_service_v4" >-->
+<!--            <intent-filter android:priority="0x7fffffff" >-->
+
+<!--                &lt;!&ndash; 【必须】 信鸽SDK的内部广播 &ndash;&gt;-->
+<!--                <action android:name="com.tencent.android.tpush.action.SDK" />-->
+<!--                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />-->
+<!--                &lt;!&ndash; 【必须】 系统广播：网络切换 &ndash;&gt;-->
+<!--                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"-->
+<!--                    tools:ignore="BatteryLife" />-->
+
+<!--                &lt;!&ndash; 【可选】 系统广播：开屏 &ndash;&gt;-->
+<!--                <action android:name="android.intent.action.USER_PRESENT" />-->
+
+<!--                &lt;!&ndash; 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service &ndash;&gt;-->
+<!--                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />-->
+<!--                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />-->
+<!--                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />-->
+<!--            </intent-filter>-->
+<!--            &lt;!&ndash; 【可选】 usb相关的系统广播，增强信鸽service的复活机会，请根据需要添加 &ndash;&gt;-->
+<!--            <intent-filter android:priority="0x7fffffff" >-->
+<!--                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />-->
+<!--                <action android:name="android.intent.action.MEDIA_REMOVED" />-->
+<!--                <action android:name="android.intent.action.MEDIA_CHECKING" />-->
+<!--                <action android:name="android.intent.action.MEDIA_EJECT" />-->
+
+<!--                <data android:scheme="file" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+
+
+<!--        &lt;!&ndash;-->
+<!--        <receiver android:name="com.mdground.screen.receiver.BootBroadcastReceiver" >-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.BOOT_COMPLETED" >-->
+<!--                </action>-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+<!--        &ndash;&gt;-->
+
+
+<!--&lt;!&ndash;         【必须】 请修改为APP的AccessId，“21”开头的10位数字，中间没空格 &ndash;&gt;-->
+<!--        <meta-data-->
+<!--            android:name="XG_V2_ACCESS_ID"-->
+<!--            android:value="2100144128" />-->
+<!--        &lt;!&ndash; 【必须】 请修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 &ndash;&gt;-->
+<!--        <meta-data-->
+<!--            android:name="XG_V2_ACCESS_KEY"-->
+<!--            android:value="AK4493K4JNCD" />-->
     </application>
 
 </manifest>

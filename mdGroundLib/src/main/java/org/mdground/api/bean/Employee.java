@@ -578,7 +578,9 @@ public class Employee {
 	}
 
 	public String getPhotoUrl() {
-		return "https://file.yideguan.com/View/GetFile.aspx?FileID=" + PhotoSID
+//		return "https://file.yideguan.com/View/GetFile.aspx?FileID=" + PhotoSID
+//				+ "&ClinicID=" + ClinicID;
+		return "http://file.yideguan.com/View/GetFile.aspx?FileID=" + PhotoSID
 				+ "&ClinicID=" + ClinicID;
 		// return "image://" + ClinicID + "." + PhotoSID;
 	}

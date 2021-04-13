@@ -3,6 +3,7 @@ package com.mdground.screen.activity;
 import com.mdground.screen.utils.AppManager;
 
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 
 public class BaseActivity extends FragmentActivity {
 

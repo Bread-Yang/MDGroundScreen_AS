@@ -11,6 +11,7 @@ import java.util.HashMap;
 
 import com.mdground.screen.R;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.app.Dialog;
@@ -54,6 +55,7 @@ public class UpdateManager {
 	private ProgressBar mProgress;
 	private Dialog mDownloadDialog;
 
+	@SuppressLint("HandlerLeak")
 	private Handler mHandler = new Handler() {
 		public void handleMessage(Message msg) {
 			switch (msg.what) {

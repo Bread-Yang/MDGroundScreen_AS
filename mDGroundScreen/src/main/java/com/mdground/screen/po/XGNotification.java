@@ -10,7 +10,6 @@ public class XGNotification {
 	private String update_time;
 
 	public XGNotification() {
-
 	}
 
 	public XGNotification(Integer id, Long msg_id, String title,

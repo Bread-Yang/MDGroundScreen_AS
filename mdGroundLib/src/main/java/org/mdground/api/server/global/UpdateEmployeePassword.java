@@ -5,6 +5,7 @@ import org.json.JSONObject;
 import org.mdground.api.base.GlobalRequest;
 import org.mdground.api.base.RequestCallBack;
 import org.mdground.api.base.RequestData;
+import org.mdground.api.utils.DebugUtil;
 
 import android.content.Context;
 import android.util.Log;
@@ -23,7 +24,7 @@ public class UpdateEmployeePassword extends GlobalRequest {
 
 	public void updateEmployeePassword(String phone, String newPwd, RequestCallBack listener) {
 		if (phone == null || newPwd == null) {
-			Log.e(TAG, "phone or newPwd is null");
+			DebugUtil.e(TAG, "phone or newPwd is null");
 			return;
 		}
 

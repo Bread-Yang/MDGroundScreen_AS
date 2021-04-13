@@ -7,7 +7,7 @@ import java.net.Socket;
 
 import org.json.JSONObject;
 
-import com.mdground.screen.MedicalAppliction;
+import com.mdground.screen.MedicalApplication;
 import com.mdground.screen.constant.MemberConstant;
 import com.mdground.screen.utils.L;
 import com.mdground.screen.utils.PreferenceUtils;
@@ -54,7 +54,7 @@ public class Client extends Thread {
 				if (action == 3) {
 					int clinicID = json.getInt("ClinicID");
 
-					boolean isRightClinic = MedicalAppliction.employee
+					boolean isRightClinic = MedicalApplication.employee
 							.getClinicID() == clinicID;
 					
 					// 没有登录的时候返回false
@@ -66,7 +66,7 @@ public class Client extends Thread {
 
 					L.e(Client.this, "json : clinicID" + clinicID);
 					L.e(Client.this, "get clinicID"
-							+ MedicalAppliction.employee.getClinicID());
+							+ MedicalApplication.employee.getClinicID());
 
 					JSONObject jsonObject = new JSONObject();
 					jsonObject.put("Action", 3);

@@ -7,28 +7,28 @@ import android.content.Context;
 
 public abstract class ClinicRequest extends BaseRequest {
 
-	public ClinicRequest(Context context) {
-		super(context);
-	}
+    public ClinicRequest(Context context) {
+        super(context);
+    }
 
-	@Override
-	protected int getBusinessCode() {
-		return BusinessType.Clinic.getType();
-	}
+    @Override
+    protected int getBusinessCode() {
+        return BusinessType.Clinic.getType();
+    }
 
-	@Override
-	protected String getUrl() {
-		MdgAppliction appliction = null;
-		if (mContext.getApplicationContext() instanceof MdgAppliction) {
-			appliction = (MdgAppliction) mContext.getApplicationContext();
-		}
-		Employee loginEmployee = appliction.getLoginEmployee();
-		if (loginEmployee != null) {
-			return loginEmployee.getURL()+"/Api/RpcService.ashx";
-		}
-		return "";
-	}
-	
-	
-	
+    @Override
+    protected String getUrl() {
+        MdgAppliction appliction = null;
+        if (mContext.getApplicationContext() instanceof MdgAppliction) {
+            appliction = (MdgAppliction) mContext.getApplicationContext();
+        }
+        Employee loginEmployee = appliction.getLoginEmployee();
+        if (loginEmployee != null) {
+            String url = (loginEmployee.getURL() + "/Api/RpcService.ashx");
+            return url.startsWith("https:") ? url.replace("https:", "http:") : url;
+        }
+        return "";
+    }
+
+
 }

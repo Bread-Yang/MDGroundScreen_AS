@@ -14,6 +14,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.support.v7.widget.AppCompatTextView;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -21,12 +22,12 @@ import android.text.TextUtils;
 import android.text.style.RelativeSizeSpan;
 import android.util.Log;
 import android.util.SparseArray;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
@@ -34,7 +35,7 @@ import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.mdground.screen.MedicalAppliction;
+import com.mdground.screen.MedicalApplication;
 import com.mdground.screen.R;
 import com.mdground.screen.constant.MedicalConstant;
 import com.mdground.screen.fonts.CustomTypefaceSpan;
@@ -49,9 +50,13 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
-import com.tencent.android.tpush.XGPushManager;
+import com.zhy.android.percent.support.PercentLinearLayout;
+import com.zhy.android.percent.support.PercentRelativeLayout;
 
 import org.apache.http.Header;
+import org.apache.http.HttpRequest;
+import org.apache.http.HttpResponse;
+import org.apache.http.protocol.HttpContext;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -86,11 +91,14 @@ import cn.yunzhisheng.tts.offline.common.USCError;
 import fi.iki.elonen.NanoHTTPD;
 
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
-public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListener {
+public class UnisoundMainActivity extends BaseActivity implements TTSPlayerListener {
 
-    private final String TAG = "UnisoundMainactivity";
+    private final String TAG = "UnisoundMainActivity";
     private static final String TEST_KEYSTORE_PWD = "ssltest";
     private static final String YIDEGUAN_KEYSTORE_PWD = "yideguanA815";
+    private Object apkLibraryInstaller;
+    private int gridViewHeight = 0;
+    private int gridViewWidth = 0;
 
     /*这类就是要自定义一些返回值，我在这里定义了700。都属于自定义*/
     enum Status implements NanoHTTPD.Response.IStatus {
@@ -119,7 +127,8 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
     private GridViewPager viewPager;
     private RadioGroup rg_page;
     private DoctorAdapter doctorAdapter;
-    private TextView tv_page, tv_highlight_num;
+    private TextView tv_page;
+    private AppCompatTextView tv_highlight_num;
     private int totalNum;
     private int currentPage = 1;
     private static final int PAGE_SIZE = 2;
@@ -155,7 +164,7 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
 
     private Typeface ttf_NotoSans_Bold, ttf_NotoSans_Regular;
 
-//    private Server mServer;
+    //    private Server mServer;
     private HttpServer mHttpServer;
 
     /**
@@ -177,7 +186,8 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
         }
     }
 
-    public class MyTimers extends Handler {
+    @SuppressLint("HandlerLeak")
+    public class MyHandlerTimers extends Handler {
 
         public static final int TIMER_1 = 0;
         public static final int TIMER_2 = 1;
@@ -245,36 +255,24 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
                 public void run() {
                     if ("com.mdground.message".equals(intent.getAction())) {
                         String message = intent.getStringExtra("message");
-
-                        L.e(UnisoundMainactivity.this, "服务器推送过来的信息是 : " + message);
-
+                        L.e(UnisoundMainActivity.this, "服务器推送过来的信息是 : " + message);
                         JSONObject json;
-
                         try {
                             json = new JSONObject(message);
-
                             int opNO = json.getInt("OPNo");
                             int doctorID = json.getInt("DoctorID");
-
                             int action = json.getInt("Action");
-
                             if (action == 1) { // 叫号
                                 callAction(doctorID, opNO, message);
                             } else if (action == 2) { // 状态上报
-
                                 int OPStatus = json.getInt("OPStatus");
-
                                 if ((OPStatus & Appointment.STATUS_DIAGNOSING) != 0) {
                                     showStartOpNO(doctorID, opNO); // 开始
-
                                     // 重新拉一次数据
-
                                     Integer index = doctorsIndex.get(String.valueOf(doctorID));
-
                                     if (index != null) {
                                         getAppointmentListByDoctor(index, doctorID);
                                     }
-
                                     // for (int i = 0; i < doctorsArray.size();
                                     // i++) {
                                     // getAppointmentListByDoctor(i, (int)
@@ -304,12 +302,12 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
                 String title = intent.getStringExtra("title");
                 String content = intent.getStringExtra("content");
                 String customContent = intent.getStringExtra("customContent");
-                L.e(UnisoundMainactivity.this, "拿到的title : " + title);
-                L.e(UnisoundMainactivity.this, "拿到的content : " + content);
-                L.e(UnisoundMainactivity.this, "拿到的customContent : " +
+                L.e(UnisoundMainActivity.this, "拿到的title : " + title);
+                L.e(UnisoundMainActivity.this, "拿到的content : " + content);
+                L.e(UnisoundMainActivity.this, "拿到的customContent : " +
                         customContent);
 
-                L.e(UnisoundMainactivity.this, "收到推送");
+                L.e(UnisoundMainActivity.this, "收到推送");
 
                 try {
                     JSONObject json = new JSONObject(customContent);
@@ -337,7 +335,7 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
                         // .get(i).getDoctorID());
                         // }
                     } else if ("UpgradeScreenVersion".equals(functionName)) { // 更新
-                        UpdateManager manager = new UpdateManager(UnisoundMainactivity.this);
+                        UpdateManager manager = new UpdateManager(UnisoundMainActivity.this);
                         manager.showDownloadDialog();
                     } else if ("CallAppointment".equals(functionName)) { // 叫号
                         L.e(this, "收到叫号推送");
@@ -442,7 +440,7 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
                 response.addHeader("Access-Control-Allow-Origin", "*");
 
                 return response;
-            }else {
+            } else {
                 Response response = newFixedLengthResponse(Status.NOT_USE_POST, "text/html", "请使用post");
 
                 response.addHeader("Access-Control-Allow-Origin", "*");
@@ -455,7 +453,7 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
     @Override
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
-        XGPushManager.registerPush(getApplicationContext());
+        //XGPushManager.registerPush(getApplicationContext());
         setContentView(R.layout.activity_main);
         findViewById();
         init();
@@ -483,9 +481,9 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
         createAndServer();
         createNanoHttpd();
 
-        MyTimers timer = new MyTimers();
-        timer.sendEmptyMessageDelayed(MyTimers.TIMER_1, 10000);
-        timer.sendEmptyMessageDelayed(MyTimers.TIMER_2, 10000);
+        MyHandlerTimers timer = new MyHandlerTimers();
+        timer.sendEmptyMessageDelayed(MyHandlerTimers.TIMER_1, 10000);
+        timer.sendEmptyMessageDelayed(MyHandlerTimers.TIMER_2, 10000);
     }
 
     @Override
@@ -599,10 +597,12 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
 
             sslContext.init(null, new TrustManager[]{new X509TrustManager() {
                 @Override
-                public void checkClientTrusted(X509Certificate[] chain, String authType)  {}
+                public void checkClientTrusted(X509Certificate[] chain, String authType) {
+                }
 
                 @Override
-                public void checkServerTrusted(X509Certificate[] chain, String authType) {}
+                public void checkServerTrusted(X509Certificate[] chain, String authType) {
+                }
 
                 @Override
                 public X509Certificate[] getAcceptedIssuers() {
@@ -616,6 +616,8 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
     }
 
     private void callAction(int doctorID, int opNO, String message) {
+
+
         // 如果当前发过来的opNO是正在播放的,则不添加进队列里面
 
         // 当正在播放林医生的叫号时,这时收到黄医生的叫号,则继续播放林医生的叫号,不过要在导诊屏上的黄医生的位置显示黄医生的叫号
@@ -671,7 +673,7 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
         viewPager = (GridViewPager) findViewById(R.id.gvp);
         rg_page = (RadioGroup) findViewById(R.id.rg_page);
         tv_page = (TextView) findViewById(R.id.page);
-        tv_highlight_num = (TextView) findViewById(R.id.tv_highlight_num);
+        tv_highlight_num = (AppCompatTextView) findViewById(R.id.tv_highlight_num);
         pageView = findViewById(R.id.page_view);
 
     }
@@ -736,6 +738,12 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
     }
 
     private void initUnisoundTTS() {
+//        List a = getMeminfo();
+//        String s = "";
+//        for (int i = 0; i < a.size(); i++) {
+//            s = s + a.toString();
+//        }
+//        Log.e("StringMEM",s);
         // 初始化语音合成对象
         mTTSPlayer = TTSFactory.createTTSControl(this, MedicalConstant.UNISOUND_APPKEY);
         // 设置音频流
@@ -752,12 +760,13 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
         mTTSPlayer.init();
     }
 
+
     private void getDoctorList() {
-        new GetDoctorInfoListByScreen(getApplicationContext()).getDoctorInfoListByScreen(MedicalAppliction.employee.getEmployeeID(), new RequestCallBack() {
+        new GetDoctorInfoListByScreen(getApplicationContext()).getDoctorInfoListByScreen(MedicalApplication.employee.getEmployeeID(), new RequestCallBack() {
 
             @Override
             public void onSuccess(ResponseData response) {
-                L.e(UnisoundMainactivity.this, "获取医生列表 : content : " + response.getContent());
+                L.e(UnisoundMainActivity.this, "获取医生列表 : content : " + response.getContent());
 
                 try {
                     JSONArray doctorArray = new JSONArray(response.getContent());
@@ -824,6 +833,7 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
         });
     }
 
+    @SuppressLint("LongLogTag")
     private void getAppointmentListByDoctor(final int index, final int doctorId) {
 
         new GetAppointmentInfoListByDoctor(getApplicationContext())
@@ -831,7 +841,7 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
 
                     @Override
                     public void onSuccess(ResponseData response) {
-                        L.e(UnisoundMainactivity.this, "医生(" + index + ") 拿到的预约是 content : " + response.getContent());
+                        L.e(UnisoundMainActivity.this, "医生(" + index + ") 拿到的预约是 content : " + response.getContent());
 
                         try {
                             JSONArray jsonArray = new JSONArray(response.getContent());
@@ -843,10 +853,6 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
                                 Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
                                 Appointment appointment = gson.fromJson(item.toString(), Appointment.class);
 
-                                // L.e(MainActivity.this,
-                                // "appointment.getOPStatus() : " +
-                                // appointment.getOPStatus());
-
                                 if ((appointment.getOPStatus() & Appointment.STATUS_WATTING) != 0
                                         && (appointment.getOPStatus() & Appointment.STATUS_DIAGNOSING) == 0) {
                                     appointmentArray.add(appointment);
@@ -854,13 +860,16 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
 
                             }
 
-                            TwoWayGridView gridView = ((TwoWayGridView) registeredViews.get(index)
-                                    .findViewById(R.id.gridview));
-                            TextView textView = (TextView) registeredViews.get(index).findViewById(R.id.tv_opNO);
-                            textView.setText("");
+                            TwoWayGridView gridView = ((TwoWayGridView) registeredViews.get(index).findViewById(R.id.gridview));
+                            LinearLayout ll_height = ((LinearLayout) registeredViews.get(index).findViewById(R.id.ll_height));
 
-                            gridView.setAdapter(new NumAdapter(appointmentArray,
-                                    doctorAdapter.getItemViewType(index) == DoctorAdapter.DOCOTOR_ITEM_SINGLE));
+
+                            gridViewHeight = ll_height.getHeight();
+                            gridViewWidth = ll_height.getWidth();
+
+                            gridView.setRowHeight(ll_height.getHeight() / 7);
+                            gridView.setAdapter(new NumAdapter(appointmentArray, index
+                                    , doctorAdapter.getItemViewType(index) == DoctorAdapter.DOCOTOR_ITEM_SINGLE));
 
                             // viewPager.notifyDataSetChanged();
 
@@ -903,7 +912,7 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
 
         public DoctorAdapter(List<Doctor> list) {
             this.list = list;
-            this.inflater = LayoutInflater.from(UnisoundMainactivity.this);
+            this.inflater = LayoutInflater.from(UnisoundMainActivity.this);
         }
 
         @Override
@@ -921,7 +930,7 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
             return position;
         }
 
-        @SuppressLint("NewApi")
+        @SuppressLint({"NewApi", "SetTextI18n", "LongLogTag"})
         @Override
         public View getView(final int position, View convertView, ViewGroup parent) {
 
@@ -930,20 +939,27 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
 
             Doctor doctorBean = list.get(position);
 
+            //Log.e("doctorBean___",doctorBean.toString());
+
             if (getItemViewType(position) == DOCOTOR_ITEM) {
 
                 if (null == convertView || null == convertView.getTag(R.layout.item_normal_docotor)) {
-                    convertView = inflater.inflate(R.layout.item_normal_docotor, null);
+                    convertView = inflater.inflate(R.layout.item_normal_docotor, parent, false);
                     holder = new DocotorViewHolder();
                     holder.iv_avatar = (ImageView) convertView.findViewById(R.id.iv_avatar);
                     holder.tv_current_tips = (TextView) convertView.findViewById(R.id.tv_current_tips);
-                    holder.tv_name = (TextView) convertView.findViewById(R.id.name_txt);
+                    holder.tv_name = (AppCompatTextView) convertView.findViewById(R.id.name_txt);
+                    holder.tv_subject = (AppCompatTextView) convertView.findViewById(R.id.tv_subject);
                     holder.tv_opNO = (FlickerTextView) convertView.findViewById(R.id.tv_opNO);
+                    holder.ll_height = (LinearLayout) convertView.findViewById(R.id.ll_height);
                     holder.tv_opNO.setTypeface(ttf_NotoSans_Bold);
                     holder.gridView = (TwoWayGridView) convertView.findViewById(R.id.gridview);
                     holder.scrollView = (ScrollView) convertView.findViewById(R.id.scrollview);
                     holder.iv_line = (ImageView) convertView.findViewById(R.id.iv_line);
+
+
                     convertView.setTag(R.layout.item_normal_docotor, holder);
+
                 } else {
                     holder = (DocotorViewHolder) convertView.getTag(R.layout.item_normal_docotor);
                 }
@@ -953,61 +969,82 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
                 } else {
                     // holder.iv_line.setVisibility(View.VISIBLE);
                 }
-                if (isShowPatientOPNum()) {
+                if (isShowPatientOPNum() == 0) {
                     holder.tv_current_tips.setText(R.string.current_num);
                 } else {
                     holder.tv_current_tips.setText(R.string.current_patient);
                 }
 
                 holder.tv_name.setText(doctorBean.getEmployeeNickName());
+                holder.tv_subject.setText(doctorBean.getEMRType());
 
             } else if (getItemViewType(position) == DOCOTOR_ITEM_SINGLE) {
 
                 if (null == convertView || null == convertView.getTag(R.layout.item_single_big_docotor)) {
-                    convertView = inflater.inflate(R.layout.item_single_big_docotor, null);
+                    convertView = inflater.inflate(R.layout.item_single_big_docotor, parent, false);
                     singleHolder = new DocotorSingleViewHolder();
                     singleHolder.iv_avatar = (ImageView) convertView.findViewById(R.id.iv_avatar);
                     singleHolder.tv_current_tips = (TextView) convertView.findViewById(R.id.tv_current_tips);
-                    singleHolder.tv_name = (TextView) convertView.findViewById(R.id.name_txt);
+                    singleHolder.tv_name = (AppCompatTextView) convertView.findViewById(R.id.name_txt);
+                    singleHolder.tv_subject = (AppCompatTextView) convertView.findViewById(R.id.tv_subject);
                     singleHolder.tv_opNO = (FlickerTextView) convertView.findViewById(R.id.tv_opNO);
+                    singleHolder.ll_height = (LinearLayout) convertView.findViewById(R.id.ll_height);
                     singleHolder.gridView = (TwoWayGridView) convertView.findViewById(R.id.gridview);
+
+
                     convertView.setTag(R.layout.item_single_big_docotor, singleHolder);
                 } else {
                     singleHolder = (DocotorSingleViewHolder) convertView.getTag(R.layout.item_single_big_docotor);
                 }
 
                 singleHolder.tv_name.setText(doctorBean.getEmployeeNickName());
+                singleHolder.tv_subject.setText(doctorBean.getEMRType());
             }
+
 
             ArrayList<Appointment> appointmentArray = allDoctorAppointmentArray
                     .get(String.valueOf(doctorBean.getDoctorID()));
 
             if (appointmentArray != null && appointmentArray.size() > 0) {
                 if (getItemViewType(position) == DOCOTOR_ITEM) {
-                    if (isShowPatientOPNum()) {
+                    if (isShowPatientOPNum() == 0) {
                         holder.tv_current_tips.setText(R.string.current_num);
                         holder.tv_opNO.setText(String.valueOf(appointmentArray.get(0).getOPNo()));
-                    } else {
+                    } else if (isShowPatientOPNum() == 1) {
                         holder.tv_current_tips.setText(R.string.current_patient);
                         holder.tv_opNO.setText(String.valueOf(appointmentArray.get(0).getPatientName()));
+                    } else {
+                        holder.tv_current_tips.setText(R.string.current_patient);
+                        String numb = String.valueOf(appointmentArray.get(0).getOPNo());
+                        String name = String.valueOf(appointmentArray.get(0).getPatientName());
+                        holder.tv_opNO.setText(numb + "  " + name);
+
                     }
 
-                    holder.gridView.setAdapter(
-                            new NumAdapter(appointmentArray, getItemViewType(position) == DOCOTOR_ITEM_SINGLE));
+
+                    holder.gridView.setAdapter(new NumAdapter(appointmentArray
+                            , position, getItemViewType(position) == DOCOTOR_ITEM_SINGLE));
                     holder.gridView.post(new MyRunnable(holder.scrollView));
                 } else {
-                    if (isShowPatientOPNum()) {
+                    if (isShowPatientOPNum() == 0) {
                         singleHolder.tv_current_tips.setText(R.string.current_num);
                         singleHolder.tv_opNO.setText(String.valueOf(appointmentArray.get(0).getOPNo()));
-                    } else {
+                    } else if (isShowPatientOPNum() == 1) {
                         singleHolder.tv_current_tips.setText(R.string.current_patient);
                         singleHolder.tv_opNO.setText(String.valueOf(appointmentArray.get(0).getPatientName()));
+                    } else {
+                        singleHolder.tv_current_tips.setText(R.string.current_patient);
+                        String numb = String.valueOf(appointmentArray.get(0).getOPNo());
+                        String name = String.valueOf(appointmentArray.get(0).getPatientName());
+                        singleHolder.tv_opNO.setText(numb + "  " + name);
                     }
 
-                    singleHolder.gridView.setAdapter(
-                            new NumAdapter(appointmentArray, getItemViewType(position) == DOCOTOR_ITEM_SINGLE));
+
+                    singleHolder.gridView.setAdapter(new NumAdapter(appointmentArray
+                            , position, getItemViewType(position) == DOCOTOR_ITEM_SINGLE));
                 }
             }
+
 
             // 头像显示
             ImageView iv_avatar = null;
@@ -1030,7 +1067,7 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
                 DisplayImageOptions option = new DisplayImageOptions.Builder().delayBeforeLoading(150)
                         .bitmapConfig(Bitmap.Config.RGB_565).cacheInMemory(false).cacheOnDisk(false)
                         .considerExifParams(true).build();
-
+                //Log.e("getPhotoURL",doctorBean.getPhotoURL());
                 ImageLoader.getInstance().loadImage(doctorBean.getPhotoURL(), option,
                         new AnimateFirstDisplayListener(iv_avatar));
             }
@@ -1098,12 +1135,14 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
         private LayoutInflater inflater;
         boolean isSingle;
         private int countLimit;
+        private int index;
         private static final int ITEM_SINGLE = 0, ITEM = 1;
 
-        public NumAdapter(List<Appointment> list, boolean isSingleItem) {
+        public NumAdapter(List<Appointment> list, int index, boolean isSingleItem) {
             this.list = list;
+            this.index = index;
             this.isSingle = isSingleItem;
-            this.inflater = LayoutInflater.from(UnisoundMainactivity.this);
+            this.inflater = LayoutInflater.from(UnisoundMainActivity.this);
             if (isSingleItem) {
                 countLimit = 24;
             } else {
@@ -1126,17 +1165,20 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
             return position;
         }
 
-        @SuppressLint("NewApi")
+        @SuppressLint({"NewApi", "SetTextI18n", "LongLogTag"})
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             NumViewHolder holder = null;
             if (null == convertView || convertView.getTag(R.layout.item_num) == null) {
-                convertView = inflater.inflate(R.layout.item_num, null);
+                convertView = inflater.inflate(R.layout.item_num, parent, false);
                 holder = new NumViewHolder();
-                holder.tv_num = (TextView) convertView.findViewById(R.id.tv_num);
+                holder.tv_num = (AppCompatTextView) convertView.findViewById(R.id.tv_num);
+                holder.ll_name = (PercentLinearLayout) convertView.findViewById(R.id.ll_name);
+                holder.prl_name = (PercentRelativeLayout) convertView.findViewById(R.id.prl_name);
                 holder.tv_num.setTypeface(ttf_NotoSans_Regular);
                 holder.iv_yizhida = (ImageView) convertView.findViewById(R.id.iv_yizhida);
                 holder.iv_emergency = (ImageView) convertView.findViewById(R.id.iv_emergency);
+                holder.iv_wechat_came = (ImageView) convertView.findViewById(R.id.iv_wechat_came);
                 convertView.setTag(R.layout.item_num, holder);
             } else {
                 holder = (NumViewHolder) convertView.getTag(R.layout.item_num);
@@ -1147,45 +1189,103 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
                 holder.tv_num.setTextColor(getResources().getColor(R.color.normal_color));
             }
 
+
             Appointment appointment = list.get(position);
+            //Log.e("UnisoundMainActivity:optype:" + appointment.getOPType(), "opstatus:" + appointment.getOPStatus());
 
             if (appointment.getOPType() == ONLINE) {
-                holder.iv_yizhida.setVisibility(View.VISIBLE);
+                holder.iv_emergency.setVisibility(View.GONE);
+
+                if ((appointment.getOPStatus()&Appointment.STATUS_CAME)==Appointment.STATUS_CAME) {
+                    holder.iv_wechat_came.setVisibility(View.VISIBLE);
+                    holder.iv_yizhida.setVisibility(View.GONE);
+
+                } else {
+                    holder.iv_yizhida.setVisibility(View.VISIBLE);
+                    holder.iv_wechat_came.setVisibility(View.GONE);
+                }
             } else {
-                holder.iv_yizhida.setVisibility(View.INVISIBLE);
+                holder.iv_yizhida.setVisibility(View.GONE);
+                holder.iv_emergency.setVisibility(View.GONE);
+                holder.iv_wechat_came.setVisibility(View.GONE);
             }
 
             if (appointment.isEmergency()) {
+
                 holder.iv_yizhida.setVisibility(View.GONE);
+                holder.iv_wechat_came.setVisibility(View.GONE);
                 holder.iv_emergency.setVisibility(View.VISIBLE);
             } else {
                 holder.iv_emergency.setVisibility(View.GONE);
             }
 
-            if (position < countLimit) {
-                if (isShowPatientOPNum()) {
-                    holder.tv_num.setTextSize(TypedValue.COMPLEX_UNIT_PX, 82);
+            TwoWayGridView gridView = ((TwoWayGridView) registeredViews.get(index).findViewById(R.id.gridview));
+            PercentRelativeLayout.LayoutParams layoutParams = (PercentRelativeLayout.LayoutParams) holder.ll_name.getLayoutParams();
+            layoutParams.height = gridViewHeight / 7;
+
+//            if (position < countLimit) {
+
+                if (isShowPatientOPNum() == 0) {//number
+
+
+
+                    if (isSingle) {
+                        layoutParams.width = gridViewWidth / 6;
+                        gridView.setNumColumns(6);
+
+                    }else {
+                        layoutParams.width = gridViewWidth / 3;
+                        gridView.setNumColumns(3);
+                    }
+
+
                     String pattern = "0000";
                     java.text.DecimalFormat df = new java.text.DecimalFormat(pattern);
                     holder.tv_num.setText(df.format(appointment.getOPNo()));
-                } else {
-                    holder.tv_num.setTextSize(TypedValue.COMPLEX_UNIT_PX, 55);
-                    String patientName = appointment.getPatientName();
+
+                } else if (isShowPatientOPNum() == 1) {//name
+
+
+                    if (isSingle) {
+                        layoutParams.width = gridViewWidth / 6;
+                        gridView.setNumColumns(6);
+
+                    }else {
+                        layoutParams.width = gridViewWidth / 3;
+                        gridView.setNumColumns(3);
+                    }
+
                     holder.tv_num.setText(appointment.getPatientName());
+                } else {//number&name
+
+
+
+                    if (isSingle) {
+                        layoutParams.width = gridViewWidth / 4;
+                        gridView.setNumColumns(4);
+
+                    }else {
+                        layoutParams.width = gridViewWidth / 2;
+                        gridView.setNumColumns(2);
+                    }
+
+
+
+                    holder.tv_num.setText(appointment.getOPNo() + "  " + appointment.getPatientName());
+
                 }
 
                 convertView.setVisibility(View.VISIBLE);
-            } else {
-                holder.tv_num.setText("......");
-                convertView.setVisibility(View.INVISIBLE);
-            }
-            // if (isSingle) {
-            // holder.numTxt.setTextSize(TypedValue.COMPLEX_UNIT_PX,
-            // getResources().getDimension(R.dimen.size_23));
-            // } else {
-            // holder.numTxt.setTextSize(TypedValue.COMPLEX_UNIT_PX,
-            // getResources().getDimension(R.dimen.size_17));
-            // }
+//            } else {
+//                holder.tv_num.setText("......");
+//                convertView.setVisibility(View.INVISIBLE);
+//            }
+            holder.tv_num.setSelected(true);
+
+            holder.ll_name.setLayoutParams(layoutParams);
+            gridView.setColumnWidth(layoutParams.width);
+
+
             return convertView;
         }
 
@@ -1209,15 +1309,16 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
 
         if (viewPagerIndex != null) {
             String showString = null;
-            if (isShowPatientOPNum()) {
-                String pattern = "0000";
-                java.text.DecimalFormat df = new java.text.DecimalFormat(pattern);
+            String pattern = "0000";
+            java.text.DecimalFormat df = new java.text.DecimalFormat(pattern);
+            if (isShowPatientOPNum() == 0) {
                 showString = df.format(opNO);
-            } else {
+            } else if (isShowPatientOPNum() == 1) {
                 showString = patientName;
+            } else {
+                showString = df.format(opNO) + " " + patientName;
             }
-            ((FlickerTextView) registeredViews.get(viewPagerIndex).findViewById(R.id.tv_opNO))
-                    .startFlicker(showString);
+            ((FlickerTextView) registeredViews.get(viewPagerIndex).findViewById(R.id.tv_opNO)).startFlicker(showString);
 
             ArrayList<Appointment> appointments = new ArrayList<Appointment>();
 
@@ -1233,9 +1334,9 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
                         break;
                     }
                 }
-                ((TwoWayGridView) registeredViews.get(viewPagerIndex).findViewById(R.id.gridview))
-                        .setAdapter(new NumAdapter(appointments,
-                                doctorAdapter.getItemViewType(viewPagerIndex) == DoctorAdapter.DOCOTOR_ITEM_SINGLE));
+                TwoWayGridView gridView = ((TwoWayGridView) registeredViews.get(viewPagerIndex).findViewById(R.id.gridview));
+                gridView.setAdapter(new NumAdapter(appointments, viewPagerIndex,
+                        doctorAdapter.getItemViewType(viewPagerIndex) == DoctorAdapter.DOCOTOR_ITEM_SINGLE));
             }
 
         }
@@ -1253,8 +1354,7 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
         Integer viewPagerIndex = doctorsIndex.get(String.valueOf(doctorID));
 
         if (viewPagerIndex != null) {
-            return ((FlickerTextView) registeredViews.get(viewPagerIndex).findViewById(R.id.tv_opNO))
-                    .getVisibility() == View.VISIBLE;
+            return ((FlickerTextView) registeredViews.get(viewPagerIndex).findViewById(R.id.tv_opNO)).getVisibility() == View.VISIBLE;
         }
         return false;
     }
@@ -1264,9 +1364,7 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
 
         if (viewPagerIndex != null) {
 
-            FlickerTextView textView = ((FlickerTextView) registeredViews.get(viewPagerIndex)
-                    .findViewById(R.id.tv_opNO));
-
+            FlickerTextView textView = ((FlickerTextView) registeredViews.get(viewPagerIndex).findViewById(R.id.tv_opNO));
             textView.setVisibility(View.VISIBLE);
             textView.setText(String.valueOf(opNO));
             textView.stopFlicker();
@@ -1283,9 +1381,9 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
                         break;
                     }
                 }
-                ((TwoWayGridView) registeredViews.get(viewPagerIndex).findViewById(R.id.gridview))
-                        .setAdapter(new NumAdapter(appointments,
-                                doctorAdapter.getItemViewType(viewPagerIndex) == DoctorAdapter.DOCOTOR_ITEM_SINGLE));
+                TwoWayGridView gridView = ((TwoWayGridView) registeredViews.get(viewPagerIndex).findViewById(R.id.gridview));
+                gridView.setAdapter(new NumAdapter(appointments, viewPagerIndex,
+                        doctorAdapter.getItemViewType(viewPagerIndex) == DoctorAdapter.DOCOTOR_ITEM_SINGLE));
             }
         }
     }
@@ -1294,8 +1392,7 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
         Integer viewPagerIndex = doctorsIndex.get(String.valueOf(doctorID));
 
         if (viewPagerIndex != null) {
-            ((FlickerTextView) registeredViews.get(viewPagerIndex).findViewById(R.id.tv_opNO))
-                    .setVisibility(View.INVISIBLE);
+            ((FlickerTextView) registeredViews.get(viewPagerIndex).findViewById(R.id.tv_opNO)).setVisibility(View.INVISIBLE);
 
             // 开始或者结束后,在本地删掉该预约
             ArrayList<Appointment> appointments = allDoctorAppointmentArray.get(String.valueOf(doctorID));
@@ -1308,39 +1405,58 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
                         break;
                     }
                 }
-                ((TwoWayGridView) registeredViews.get(viewPagerIndex).findViewById(R.id.gridview))
-                        .setAdapter(new NumAdapter(appointments,
-                                doctorAdapter.getItemViewType(viewPagerIndex) == DoctorAdapter.DOCOTOR_ITEM_SINGLE));
+                TwoWayGridView gridView = ((TwoWayGridView) registeredViews.get(viewPagerIndex).findViewById(R.id.gridview));
+                gridView.setAdapter(new NumAdapter(appointments, viewPagerIndex,
+                        doctorAdapter.getItemViewType(viewPagerIndex) == DoctorAdapter.DOCOTOR_ITEM_SINGLE));
             }
 
         }
     }
 
-    private boolean isShowPatientOPNum() {
-        return ((MedicalAppliction) getApplication()).getmClinic().getNavigationType().equals("Number");
+    private int isShowPatientOPNum() {
+        String type = ((MedicalApplication) getApplication()).getmClinic().getNavigationType();
+        //Log.e("ClinicType", type);
+        if (type.equals("Number")) {
+            return 0;
+        } else if (type.equals("Name")) {
+            return 1;
+        } else {//NumberName
+            return 2;
+        }
+
     }
 
     static class DocotorViewHolder {
         ScrollView scrollView;
         ImageView iv_avatar;
-        TextView tv_current_tips, tv_name;
+        TextView tv_current_tips;
+        AppCompatTextView     tv_subject;
+        AppCompatTextView tv_name;
         FlickerTextView tv_opNO;
+        LinearLayout ll_height;
+
         TwoWayGridView gridView;
         ImageView iv_line;
     }
 
     static class DocotorSingleViewHolder {
         ImageView iv_avatar;
-        TextView tv_current_tips, tv_name;
+        TextView tv_current_tips;
+                AppCompatTextView tv_subject;
+        AppCompatTextView tv_name;
         FlickerTextView tv_opNO;
+        LinearLayout ll_height;
         TwoWayGridView gridView;
     }
 
     static class NumViewHolder {
-        TextView tv_num;
-        ImageView iv_yizhida, iv_emergency;
+        PercentLinearLayout ll_name;
+        AppCompatTextView tv_num;
+        ImageView iv_yizhida, iv_emergency, iv_wechat_came;
+        PercentRelativeLayout prl_name;
     }
 
+    @SuppressLint("HandlerLeak")
     final Handler handler = new Handler() {
         public void dispatchMessage(Message msg) {
             switch (msg.what) {
@@ -1415,8 +1531,12 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
             String speechString = null;
 
             String callPatientString = patientName;   // 默认叫病人的名字
-            if (isShowPatientOPNum()) {
+            if (isShowPatientOPNum() == 0) {
                 callPatientString = String.valueOf(opNO + "号");  // 叫病人的预约号码
+            } else if (isShowPatientOPNum() == 1) {
+                callPatientString = patientName;  // 叫病人名字
+            } else {
+                callPatientString = opNO + "号" + patientName;  // 叫预约号和病人名字
             }
             speechString = "请" + callPatientString + "到" + doctorName + "处就诊";
 //			if (doctorName.endsWith("医生")) {
@@ -1426,29 +1546,35 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
 //			}
 
             speechString = speechString.replace("曾", "增"); // 预防"曾"读成ceng
+            speechString = speechString.replace("锜", "奇");
 
             // 播放语音
             mTTSPlayer.play(speechString);
 
             String showPatientString = null;
+            String pattern = "0000";
+            java.text.DecimalFormat df = new java.text.DecimalFormat(pattern);
+            String showString = df.format(opNO);
             // 显示多个医生的时候
-            if (isShowPatientOPNum()) {
-                String pattern = "0000";
-                java.text.DecimalFormat df = new java.text.DecimalFormat(pattern);
-                String showString = df.format(opNO);
+            if (isShowPatientOPNum() == 0) {
                 showPatientString = String.valueOf(showString + "  ");  // 叫病人的预约号码
-            } else {
+            } else if (isShowPatientOPNum() == 1) {
                 showPatientString = patientName + "  ";
+            } else {
+                showPatientString = df.format(opNO) + "号 " + patientName + "  ";
             }
+
             if (mDoctorsArray.size() > 0) {
-                String showString = "";
-                if (isShowPatientOPNum()) {
-                    showString = "请  " + showPatientString + "号到" + doctorName + "处就诊";
+                String showString1 = "";
+                if (isShowPatientOPNum() == 0) {
+                    showString1 = "请  " + showPatientString + "号到" + doctorName + "处就诊";
+                } else if (isShowPatientOPNum() == 1) {
+                    showString1 = "请  " + showPatientString + "到" + doctorName + "处就诊";
                 } else {
-                    showString = "请  " + showPatientString + "到" + doctorName + "处就诊";
+                    showString1 = "请  " + showPatientString + "到" + doctorName + "处就诊";
                 }
                 // 在顶部高亮
-                SpannableString ss = new SpannableString(showString);
+                SpannableString ss = new SpannableString(showString1);
                 ss.setSpan(new CustomTypefaceSpan("", ttf_NotoSans_Bold), 3, 3 + showPatientString.length(),
                         Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
                 ss.setSpan(new RelativeSizeSpan(1.44f), 3, 3 + showPatientString.length(),
@@ -1547,14 +1673,14 @@ public class UnisoundMainactivity extends BaseActivity implements TTSPlayerListe
 
     @Override
     public void onPlayBegin() {
-        L.e(UnisoundMainactivity.this, "朗读开始");
+        L.e(UnisoundMainActivity.this, "朗读开始");
         isPlaying = true;
         currentSpeechCount++;
     }
 
     @Override
     public void onPlayEnd() {
-        L.e(UnisoundMainactivity.this, "朗读结束");
+        L.e(UnisoundMainActivity.this, "朗读结束");
 
         isPlaying = false;
 

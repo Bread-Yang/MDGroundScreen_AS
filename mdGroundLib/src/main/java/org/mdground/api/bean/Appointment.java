@@ -54,6 +54,8 @@ public class Appointment implements Parcelable, Comparable<Appointment> {
 	public static final int STATUS_INVALID = 128;
 	// / 重新排队
 	public static final int STATUS_REAPPOINT = 256;
+	// / 已签到
+	public static final int STATUS_CAME = 2052;
 
 	@SerializedName("OPNo")
 	@Expose
@@ -399,4 +401,6 @@ public class Appointment implements Parcelable, Comparable<Appointment> {
 		}
 		return -1;
 	}
+
+
 }

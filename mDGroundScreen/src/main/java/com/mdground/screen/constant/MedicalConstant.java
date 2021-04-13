@@ -10,7 +10,8 @@ public class MedicalConstant {
 	/**
 	 * 全局服务器地址
 	 */
-	public static final String GLOBAL_HOST = "https://g.yideguan.com";
+	public static final String GLOBAL_HOST = "http://g.yideguan.com";
+//	public static final String GLOBAL_HOST = "https://g.yideguan.com";
 //	 public static final String GLOBAL_HOST = "https://guat.yideguan.com";
 	public static final String API_ACTION = "/Api/ClinicService.aspx";
 	public static final String GLOBAL_SERVER = GLOBAL_HOST + API_ACTION;

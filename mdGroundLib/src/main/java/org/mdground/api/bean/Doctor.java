@@ -133,7 +133,9 @@ public class Doctor implements Parcelable {
 
 	public String getPhotoURL() {
 		// return PhotoURL;
-		return "https://file.yideguan.com/View/GetFile.aspx?FileID=" + PhotoSID
+//		return "https://file.yideguan.com/View/GetFile.aspx?FileID=" + PhotoSID
+//				+ "&ClinicID=" + clinicID;
+		return "http://file.yideguan.com/View/GetFile.aspx?FileID=" + PhotoSID
 				+ "&ClinicID=" + clinicID;
 	}
 
@@ -251,4 +253,25 @@ public class Doctor implements Parcelable {
 		}
 	};
 
+
+	@Override
+	public String toString() {
+		return "Doctor{" +
+				"clinicID=" + clinicID +
+				", EmployeeID=" + EmployeeID +
+				", EmployeeName='" + EmployeeName + '\'' +
+				", EmployeeNickName='" + EmployeeNickName + '\'' +
+				", Gender=" + Gender +
+				", PhotoSID=" + PhotoSID +
+				", PhotoID=" + PhotoID +
+				", PhotoURL='" + PhotoURL + '\'' +
+				", UpdatedTime=" + UpdatedTime +
+				", WorkStatus=" + WorkStatus +
+				", DoctorID=" + DoctorID +
+				", DoctorName='" + DoctorName + '\'' +
+				", EMRType='" + EMRType + '\'' +
+				", waittingCount=" + waittingCount +
+				", isSelected=" + isSelected +
+				'}';
+	}
 }

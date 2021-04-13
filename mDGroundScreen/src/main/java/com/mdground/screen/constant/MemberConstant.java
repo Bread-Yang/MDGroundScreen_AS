@@ -129,8 +129,7 @@ public class MemberConstant {
 	//登录相关常量
 	public static final String LOGIN_EMPLOYEE = "login_employee";
 	public static final String DEVICE_ID = "device_id";
-	
-	
-	
 
+
+	public static final String CRASH_PATH = "CRASH_PATH";
 }
