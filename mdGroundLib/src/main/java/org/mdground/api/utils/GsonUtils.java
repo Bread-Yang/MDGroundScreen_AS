@@ -13,7 +13,6 @@ import com.google.gson.stream.JsonToken;
 import com.google.gson.stream.JsonWriter;
 
 import org.mdground.api.utils.json.NullStringToEmptyAdapterFactory;
-import org.mdground.api.utils.StringUtil;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
