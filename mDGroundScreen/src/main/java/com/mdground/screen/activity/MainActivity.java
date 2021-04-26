@@ -19,6 +19,7 @@ import org.mdground.api.bean.Appointment;
 import org.mdground.api.bean.Doctor;
 import org.mdground.api.server.clinic.GetAppointmentInfoListByDoctor;
 import org.mdground.api.server.global.GetDoctorList;
+import org.mdground.api.utils.GsonUtils;
 
 import com.baidu.speechsynthesizer.SpeechSynthesizer;
 import com.baidu.speechsynthesizer.SpeechSynthesizerListener;
@@ -483,7 +484,7 @@ public class MainActivity extends BaseActivity implements SpeechSynthesizerListe
 
                     for (int i = 0; i < doctorArray.length(); i++) {
                         JSONObject item = doctorArray.getJSONObject(i);
-                        Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
+                        Gson gson = GsonUtils.getGson();
                         Doctor doctor = gson.fromJson(item.toString(), Doctor.class);
 
                         doctorsArray.add(doctor);
@@ -559,7 +560,7 @@ public class MainActivity extends BaseActivity implements SpeechSynthesizerListe
 
                             for (int i = 0; i < jsonArray.length(); i++) {
                                 JSONObject item = jsonArray.getJSONObject(i);
-                                Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
+                                Gson gson = GsonUtils.getGson();
                                 Appointment appointment = gson.fromJson(item.toString(), Appointment.class);
 
 //								L.e(MainActivity.this, "appointment.isEmergency() : " + appointment.isEmergency());

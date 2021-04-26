@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
+import org.mdground.api.utils.GsonUtils;
+
 public class ResponseData {
 	public  static String CurrentPostString;
 	public  static String CurrentEncryptPostString;
@@ -42,7 +44,7 @@ public class ResponseData {
 	}
 
 	public <T> T getContent(Class<? extends T> clazz) {
-		Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
+		Gson gson = GsonUtils.getGson();
 		if (Content == null) {
 			return null;
 		} else {
@@ -54,7 +56,7 @@ public class ResponseData {
 		if (type == null) {
 			return null;
 		}
-		Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
+		Gson gson = GsonUtils.getGson();
 		if (Content == null) {
 			return null;
 		} else {

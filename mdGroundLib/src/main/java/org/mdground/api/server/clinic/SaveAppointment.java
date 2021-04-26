@@ -4,6 +4,7 @@ import org.mdground.api.base.ClinicRequest;
 import org.mdground.api.base.RequestCallBack;
 import org.mdground.api.base.RequestData;
 import org.mdground.api.bean.Appointment;
+import org.mdground.api.utils.GsonUtils;
 
 import android.content.Context;
 
@@ -28,7 +29,7 @@ public class SaveAppointment extends ClinicRequest {
 			return;
 		}
 
-		Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
+		Gson gson = GsonUtils.getGson();
 		String query = gson.toJson(appointment);
 
 		RequestData data = getData();

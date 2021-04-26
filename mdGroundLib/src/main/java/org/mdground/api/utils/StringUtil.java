@@ -10,8 +10,19 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.UUID;
+import java.util.regex.Pattern;
 
 public class StringUtil {
+
+	private static Pattern pattern = Pattern.compile("-?\\d+(\\.\\d+)?");
+
+	public static boolean isNumeric(String strNum) {
+		if (strNum == null) {
+			return false;
+		}
+		return pattern.matcher(strNum).matches();
+	}
+
 	public static String getAge(String dob) {
 		Calendar calendar = Calendar.getInstance();
 		try {

@@ -3,6 +3,7 @@ package org.mdground.api.server.clinic;
 import org.mdground.api.base.ClinicRequest;
 import org.mdground.api.base.RequestCallBack;
 import org.mdground.api.bean.Patient;
+import org.mdground.api.utils.GsonUtils;
 
 import android.content.Context;
 
@@ -27,7 +28,7 @@ public class SavePatient extends ClinicRequest {
 		}
 		
 		setRequestCallBack(requestCallBack);
-		Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
+		Gson gson = GsonUtils.getGson();
 		getData().setQueryData(gson.toJson(patientDetail));
 		pocess();
 	}

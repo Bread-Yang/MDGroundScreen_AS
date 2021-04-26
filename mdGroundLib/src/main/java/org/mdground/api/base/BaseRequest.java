@@ -40,6 +40,7 @@ import org.mdground.api.bean.Employee;
 import org.mdground.api.utils.DebugUtil;
 import org.mdground.api.utils.DeviceUtils;
 import org.mdground.api.utils.Encrypt;
+import org.mdground.api.utils.GsonUtils;
 import org.mdground.api.utils.MD5Util;
 
 import android.content.Context;
@@ -129,7 +130,7 @@ public abstract class BaseRequest {
                 DebugUtil.i(TAG, body);
             }
 
-            Gson gson = new GsonBuilder().create();
+            Gson gson = GsonUtils.getGson();
             responseData = gson.fromJson(body, ResponseData.class);
         } catch (ClientProtocolException e) {
             e.printStackTrace();
@@ -333,7 +334,7 @@ public abstract class BaseRequest {
                     DebugUtil.i(TAG, responseString);
                 }
 
-                Gson gson = new GsonBuilder().create();
+                Gson gson = GsonUtils.getGson();
                 ResponseData mResponseData = gson.fromJson(responseString, ResponseData.class);
 
                 DebugUtil.e(TAG, "请求接口" + getFunctionName() + "返回的json" + "\n" + "{"
